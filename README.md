@@ -395,6 +395,8 @@ namespace Frequency <br>
         } <br>
     } <br>
 } <br>
+OUTPUT: <br>
+ ![image](https://user-images.githubusercontent.com/97940333/154637991-c202802c-3fa3-4028-b687-3cc6bb68fbbe.png)
 
-
+ 
 

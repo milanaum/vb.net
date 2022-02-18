@@ -248,7 +248,7 @@ namespace Exercises<br>
 Output:<br>
 ![Screenshot (6)](https://user-images.githubusercontent.com/97940277/154629462-8db67286-8206-4499-a9f4-332a2a467ab8.png)<br>
 
-6. C# Program to Implement Principles of Delegates (converting input string to  uppercase first, last and entire string). 
+6. C# Program to Implement Principles of Delegates (converting input string to  uppercase first, last and entire string). <br>
 using System; <br>
 namespace Exercises <br>
 { <br>
@@ -287,7 +287,9 @@ namespace Exercises <br>
 
 Output:<BR>
  ![Screenshot (8)](https://user-images.githubusercontent.com/97940277/154631240-41ca6a79-7405-492b-92fa-a0480c9c1587.png)
-using System;
+
+ 7.C# program to Generate Register Number automatically for 100 Students using Static Constructor. <br>
+ using System; <br>
 
 namespace Register_number <br>
 { <br>

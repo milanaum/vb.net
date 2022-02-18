@@ -316,3 +316,5 @@ namespace Register_number <br>
     } <br>
 } <br>
 OUTPUT: <br>
+![image](https://user-images.githubusercontent.com/97940333/154635181-0f940813-32eb-4881-879c-99d15b2591c8.png)![image](https://user-images.githubusercontent.com/97940333/154635531-cfbb395d-b6c3-4aa0-b400-68bb18972dd2.png)
+

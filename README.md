@@ -318,3 +318,33 @@ namespace Register_number <br>
 OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/154635181-0f940813-32eb-4881-879c-99d15b2591c8.png)![image](https://user-images.githubusercontent.com/97940333/154635531-cfbb395d-b6c3-4aa0-b400-68bb18972dd2.png)
 
+ 8.C# program to find the frequency of the word "is" in a given sentence. <br>
+ using System;
+
+namespace Frequency <br>
+{ <br>
+    class Frequency <br>
+    { <br>
+        static void Main(string[] args) <br>
+        { <br>
+            int count = 0; <br>
+            string inputString; <br>
+            Console.WriteLine("\n_____________Frequency of word 'is'________________"); <br>
+            Console.Write("\n Enter the input string:"); <br>
+            inputString = Console.ReadLine(); <br>
+            char[] separator = { ',',' ','.','!','\n' }; <br>
+            string testString = inputString.ToLower(); <br>
+            String[] outcomes = testString.Split(separator); <br>
+            foreach(String s in outcomes) <br>
+            { <br>
+                Console.WriteLine(s); <br>
+                if (s == "is") <br>
+                    count++; <br>
+            } <br>
+            Console.WriteLine("\n Number of 'is' in " + inputString + "is:" + count); <br>
+        } <br>
+    } <br>
+} <br>
+ OUTPUT: <br>
+ 
+

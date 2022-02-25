@@ -495,3 +495,29 @@ public class FactorialExample <br>
 OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/155664316-1998f10a-b116-40bf-b0e9-2fbc1724ee52.png)
 
+14. Write a c# program to check armstrong number. <br>
+ *****************************************************************
+ using System; <br>
+public class ArmstrongExample  <br>
+{ <br>
+    public static void Main(string[] args) <br>
+    { <br>
+        int n, r, sum = 0, temp; <br>
+        Console.Write("Enter the Number= "); <br>
+        n = int.Parse(Console.ReadLine()); <br>
+        temp = n; <br>
+        while (n > 0) <br>
+        { <br>
+            r = n % 10; <br>
+            sum = sum + (r * r * r); <br>
+            n = n / 10; <br>
+        } <br>
+        if (temp == sum) <br>
+            Console.Write("Armstrong Number."); <br>
+        else <br>
+            Console.Write("Not Armstrong Number."); <br>
+    } <br>
+} <br>
+ OUTPUT: <br>
+ ![image](https://user-images.githubusercontent.com/97940333/155665951-0cbbb8f6-1274-4c39-812b-1533e265a2f5.png),![image](https://user-images.githubusercontent.com/97940333/155666062-c9801d2c-261d-4ebc-ab60-edd6c8fba90f.png)
+

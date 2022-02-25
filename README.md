@@ -425,5 +425,28 @@ namespace Fibonacci <br>
  OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/155659227-f6884f19-6863-412e-b590-4b80b230f5a0.png)
 
- 
+ 11.Write a c# program to check prime number. <br>
+using System; <br>
+public class PrimeNumberExample <br>
+{ <br>
+    public static void Main(string[] args) <br>
+    { <br>
+        int n, i, m = 0, flag = 0; <br>
+        Console.Write("Enter the Number to check Prime: "); <br>
+        n = int.Parse(Console.ReadLine()); <br>
+        m = n / 2; <br>
+        for (i = 2; i <= m; i++) <br>
+        { <br>
+            if (n % i == 0) <br>
+            { <br>
+                Console.Write("Number is not Prime."); <br>
+                flag = 1; <br>
+                break; <br>
+            } <br>
+        } <br>
+        if (flag == 0) <br>
+            Console.Write("Number is Prime."); <br>
+    } <br>
+} <br>
+ OUTPUT: <br>
 

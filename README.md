@@ -474,4 +474,7 @@ public class PalindromeExample  <br>
     } <br>
 } <br>
  OUTPUT: <br>
+ ![image](https://user-images.githubusercontent.com/97940333/155662868-b019525d-586b-4cab-81f5-0dc1ebcf3335.png),![image](https://user-images.githubusercontent.com/97940333/155662954-ce9e552f-75ee-47ee-8c6b-81eacb2af3c7.png)
+
+
 

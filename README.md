@@ -1,6 +1,8 @@
 # vb.net
 # vb.net
+********************************************************************************************
 1.Write C# program to print a binary triangle <br>
+********************************************************************************************
 using System; <br>
 namespace Exercises <br>
 { <br>
@@ -29,10 +31,10 @@ namespace Exercises <br>
 } <br>
 output:
 
-![image](https://user-images.githubusercontent.com/97940277/154424310-683c4e72-1d56-42de-8157-6305eb621de2.png)<br> <
+![image](https://user-images.githubusercontent.com/97940277/154424310-683c4e72-1d56-42de-8157-6305eb621de2.png)<br> 
 
-<br>
-2. C# Program to Check Whether the Entered Number is an Amicable Number  or Not. 
+************************************************************************************************************************
+2. C# Program to Check Whether the Entered Number is an Amicable Number  or Not. <br>  ******************************************************************************************************************** 
 using System; <br>
 namespace Exercises <br>
 { <br>
@@ -72,7 +74,9 @@ namespace Exercises <br>
 Output:
 ![image](https://user-images.githubusercontent.com/97940277/154425770-736ffae1-e0b1-47bb-9302-dc3bb7b0f174.png)
 
+****************************************************************************************************************
 3. C# Program to Illustrate Multilevel Inheritance with Virtual Methods  (displaying student details). <br>
+************************************************************************************************************
 using System; <br>
 namespace Exercises<br> 
 { <br>
@@ -179,7 +183,9 @@ else <br>
 output:
 ![Screenshot (2)](https://user-images.githubusercontent.com/97940277/154626095-6285ac41-c5d1-43f9-b32f-4633d2e02030.png)<br>
 
+****************************************************************************************************************
 4. C# Program to Create a Gray Code.<br>
+****************************************************************************************************************
 using System; <br>
 namespace Exercises <br>
 { <br>
@@ -205,7 +211,9 @@ namespace Exercises <br>
 Output:<br>
 ![Screenshot (4)](https://user-images.githubusercontent.com/97940277/154628717-e1674fe3-eb2f-4265-80ca-84070f18b137.png)<br>
 
+************************************************************************************************************************************************
 5. C# program to calculate volume of 2 boxes and find the resultant volume  after addition of 2 boxes by implementing operator overloading.<br> 
+************************************************************************************************************************************************
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -249,7 +257,9 @@ namespace Exercises<br>
 Output:<br>
 ![Screenshot (6)](https://user-images.githubusercontent.com/97940277/154629462-8db67286-8206-4499-a9f4-332a2a467ab8.png)<br>
 
+********************************************************************************************************************************************
 6. C# Program to Implement Principles of Delegates (converting input string to  uppercase first, last and entire string). <br>
+********************************************************************************************************************************************
 using System; <br>
 namespace Exercises <br>
 { <br>
@@ -289,7 +299,9 @@ namespace Exercises <br>
 Output:<BR>
  ![Screenshot (8)](https://user-images.githubusercontent.com/97940277/154631240-41ca6a79-7405-492b-92fa-a0480c9c1587.png)
 
+ ****************************************************************************************************************************
  7.C# program to Generate Register Number automatically for 100 Students using Static Constructor. <br>
+ ****************************************************************************************************************************
  using System; <br>
 
 namespace Register_number <br>
@@ -319,8 +331,10 @@ namespace Register_number <br>
 OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/154635181-0f940813-32eb-4881-879c-99d15b2591c8.png)![image](https://user-images.githubusercontent.com/97940333/154635531-cfbb395d-b6c3-4aa0-b400-68bb18972dd2.png)
 
+ ************************************************************************************************************************************************
  8.C# program to find the frequency of the word "is" in a given sentence. <br>
- using System;
+************************************************************************************************************************************************
+using System;
 
 namespace Frequency <br>
 { <br>
@@ -349,7 +363,9 @@ namespace Frequency <br>
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/154636503-6710c374-c37a-425f-819e-f2e7cea50b0a.png)
 
+ ********************************************************************************************************************************
 9.C# program that benchmarks 2D,jagged array allocation. <br>
+**********************************************************************************************************************************
  using System; <br>
  using Benchmark_Allocation <br>
  namespace Benchmark_Allocation <br>
@@ -399,8 +415,10 @@ namespace Frequency <br>
 OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/154637991-c202802c-3fa3-4028-b687-3cc6bb68fbbe.png)
  
+ ************************************************************************************************************************************
  10.Write a c# program to print fibonacci series without using recurd=sion and using recursion. <br>
-using System; <br>
+**************************************************************************************************************************************
+ using System; <br>
 
 namespace Fibonacci <br>
 { <br>
@@ -425,8 +443,10 @@ namespace Fibonacci <br>
  OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/155659227-f6884f19-6863-412e-b590-4b80b230f5a0.png)
 
+ ************************************************************************************************************************************************
  11.Write a c# program to check prime number. <br>
-using System; <br>
+**************************************************************************************************************************************************
+ using System; <br>
 public class PrimeNumberExample <br>
 { <br>
     public static void Main(string[] args) <br>
@@ -451,8 +471,10 @@ public class PrimeNumberExample <br>
  OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/155661030-4cb66e8b-ef8d-4470-abd1-063f7a441711.png) ![image](https://user-images.githubusercontent.com/97940333/155661299-e95ab4e9-9a1b-427a-a95e-8c0144b1829d.png)
 
+ ************************************************************************************************************************************************
  12. Write a c# Program to check palindrome number. <br>
-using System; <br>
+**************************************************************************************************************************************************
+ using System; <br>
 public class PalindromeExample  <br>
 { <br>
     public static void Main(string[] args) <br>
@@ -474,10 +496,12 @@ public class PalindromeExample  <br>
     } <br>
 } <br>
  OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/155662868-b019525d-586b-4cab-81f5-0dc1ebcf3335.png),![image](https://user-images.githubusercontent.com/97940333/155662954-ce9e552f-75ee-47ee-8c6b-81eacb2af3c7.png)
+ ![image](https://user-images.githubusercontent.com/97940333/155662868-b019525d-586b-4cab-81f5-0dc1ebcf3335.png)!![image](https://user-images.githubusercontent.com/97940333/155662954-ce9e552f-75ee-47ee-8c6b-81eacb2af3c7.png)
 
+ ********************************************************************************************************************************************************
  13.Write a c# program to print factorial of a number. <br>
-using System; <br>
+*********************************************************************************************************************************************************
+ using System; <br>
 public class FactorialExample <br>
 { <br>
     public static void Main(string[] args) <br>
@@ -495,8 +519,9 @@ public class FactorialExample <br>
 OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/155664316-1998f10a-b116-40bf-b0e9-2fbc1724ee52.png)
 
+ ****************************************************************************************************************************************************
 14. Write a c# program to check armstrong number. <br>
- *****************************************************************
+ *****************************************************************************************************************************************************
  using System; <br>
 public class ArmstrongExample  <br>
 { <br>
@@ -519,10 +544,11 @@ public class ArmstrongExample  <br>
     } <br>
 } <br>
  OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/155665951-0cbbb8f6-1274-4c39-812b-1533e265a2f5.png),![image](https://user-images.githubusercontent.com/97940333/155666062-c9801d2c-261d-4ebc-ab60-edd6c8fba90f.png)
+ ![image](https://user-images.githubusercontent.com/97940333/155665951-0cbbb8f6-1274-4c39-812b-1533e265a2f5.png)!![image](https://user-images.githubusercontent.com/97940333/155666062-c9801d2c-261d-4ebc-ab60-edd6c8fba90f.png)
 
+ ****************************************************************************************************************************************************
  16.Write a c# program to print sum of digits. <br>
- ***************************************************************
+ *****************************************************************************************************************************************************
  using System; <br>
 public class SumExample <br>
 { <br>
@@ -541,11 +567,11 @@ public class SumExample <br>
     } <br>
 } <br>
  OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)
-![image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
+ ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)![image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
 
+ ********************************************************************************************************************************************************
 17.Write a c# program to reverse given number. <br>
- *************************************************************
+ *********************************************************************************************************************************************************
  using System; <br>
 public class ReverseExample  <br>
 {  <br>
@@ -566,8 +592,9 @@ public class ReverseExample  <br>
  OUTPUT:  <br>
  ![image](https://user-images.githubusercontent.com/97940333/155668608-05594aa4-f09d-4934-a046-1b3905335a00.png)
 
+ ************************************************************************************************************************************************************
  18.Write a c# program to swap two numbers without third variable. <br>
- ********************************************************************************
+ ************************************************************************************************************************************************************
  using System; <br>
 public class SwapExample   <br>
 {  <br>

@@ -476,5 +476,22 @@ public class PalindromeExample  <br>
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/155662868-b019525d-586b-4cab-81f5-0dc1ebcf3335.png),![image](https://user-images.githubusercontent.com/97940333/155662954-ce9e552f-75ee-47ee-8c6b-81eacb2af3c7.png)
 
-
+ 13.Write a c# program to print factorial of a number. <br>
+using System; <br>
+public class FactorialExample <br>
+{ <br>
+    public static void Main(string[] args) <br>
+    { <br>
+        int i, fact = 1, number; <br>
+        Console.Write("Enter any Number: "); <br>
+        number = int.Parse(Console.ReadLine()); <br>
+        for (i = 1; i <= number; i++) <br>
+        { <br>
+            fact = fact * i; <br>
+        } <br>
+        Console.Write("Factorial of " + number + " is: " + fact); <br>
+    } <br>
+} <br>
+OUTPUT: <br>
+ ![image](https://user-images.githubusercontent.com/97940333/155664316-1998f10a-b116-40bf-b0e9-2fbc1724ee52.png)
 

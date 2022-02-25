@@ -582,4 +582,5 @@ public class SwapExample   <br>
     } <br>
 } <br>
  OUTPUT: <br>
- 
+ ![image](https://user-images.githubusercontent.com/97940333/155669712-2af6101f-2a36-4c5e-95e2-f8fc9b8a701c.png)
+

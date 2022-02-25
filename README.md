@@ -521,3 +521,24 @@ public class ArmstrongExample  <br>
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/155665951-0cbbb8f6-1274-4c39-812b-1533e265a2f5.png),![image](https://user-images.githubusercontent.com/97940333/155666062-c9801d2c-261d-4ebc-ab60-edd6c8fba90f.png)
 
+ 16.Write a c# program to print sum of digits. <br>
+ ***************************************************************
+ using System; <br>
+public class SumExample <br>
+{ <br>
+    public static void Main(string[] args) <br>
+    { <br>
+        int n, sum = 0, m; <br>
+        Console.Write("Enter a number: "); <br>
+        n = int.Parse(Console.ReadLine()); <br>
+        while (n > 0) <br>
+        { <br>
+            m = n % 10; <br>
+            sum = sum + m; <br>
+            n = n / 10; <br>
+        } <br>
+        Console.Write("Sum is= " + sum); <br>
+    } <br>
+} <br>
+ OUTPUT: <br>
+ 

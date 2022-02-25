@@ -34,7 +34,8 @@ output:
 ![image](https://user-images.githubusercontent.com/97940277/154424310-683c4e72-1d56-42de-8157-6305eb621de2.png)<br> 
 
 ************************************************************************************************************************
-2. C# Program to Check Whether the Entered Number is an Amicable Number  or Not. <br>  ******************************************************************************************************************** 
+2. C# Program to Check Whether the Entered Number is an Amicable Number  or Not. <br>  
+*************************************************************************************************************************
 using System; <br>
 namespace Exercises <br>
 { <br>

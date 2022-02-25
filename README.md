@@ -544,3 +544,24 @@ public class SumExample <br>
  ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)
 ![image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
 
+17.Write a c# program to reverse given number. <br>
+ *************************************************************
+ using System; <br>
+public class ReverseExample  <br>
+{  <br>
+    public static void Main(string[] args)  <br>
+    {  <br>
+        int n, reverse = 0, rem;  <br>
+        Console.Write("Enter a number: ");  <br>
+        n = int.Parse(Console.ReadLine());  <br>
+        while (n != 0)  <br>
+        {  <br>
+            rem = n % 10;  <br>
+            reverse = reverse * 10 + rem;  <br>
+            n /= 10;  <br>
+        }  <br>
+        Console.Write("Reversed Number: " + reverse);  <br>
+    }  <br>
+}  <br>
+ OUTPUT:  <br>
+ ![image](https://user-images.githubusercontent.com/97940333/155668608-05594aa4-f09d-4934-a046-1b3905335a00.png)

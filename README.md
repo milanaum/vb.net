@@ -422,6 +422,8 @@ namespace Fibonacci <br>
         } <br>
     } <br>
 } <br>
+ OUTPUT: <br>
+![image](https://user-images.githubusercontent.com/97940333/155659227-f6884f19-6863-412e-b590-4b80b230f5a0.png)
 
  
 

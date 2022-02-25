@@ -1,7 +1,7 @@
 # vb.net
 # vb.net
 ********************************************************************************************
-1.Write C# program to print a binary triangle <br>
+1. Write C# program to print a binary triangle <br>
 ********************************************************************************************
 using System; <br>
 namespace Exercises <br>
@@ -301,7 +301,7 @@ Output:<BR>
  ![Screenshot (8)](https://user-images.githubusercontent.com/97940277/154631240-41ca6a79-7405-492b-92fa-a0480c9c1587.png)
 
  ****************************************************************************************************************************
- 7.C# program to Generate Register Number automatically for 100 Students using Static Constructor. <br>
+ 7. C# program to Generate Register Number automatically for 100 Students using Static Constructor. <br>
  ****************************************************************************************************************************
  using System; <br>
 
@@ -333,7 +333,7 @@ OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/154635181-0f940813-32eb-4881-879c-99d15b2591c8.png)![image](https://user-images.githubusercontent.com/97940333/154635531-cfbb395d-b6c3-4aa0-b400-68bb18972dd2.png)
 
  ************************************************************************************************************************************************
- 8.C# program to find the frequency of the word "is" in a given sentence. <br>
+ 8. C# program to find the frequency of the word "is" in a given sentence. <br>
 ************************************************************************************************************************************************
 using System;
 
@@ -365,7 +365,7 @@ namespace Frequency <br>
  ![image](https://user-images.githubusercontent.com/97940333/154636503-6710c374-c37a-425f-819e-f2e7cea50b0a.png)
 
  ********************************************************************************************************************************
-9.C# program that benchmarks 2D,jagged array allocation. <br>
+9. C# program that benchmarks 2D,jagged array allocation. <br>
 **********************************************************************************************************************************
  using System; <br>
  using Benchmark_Allocation <br>
@@ -417,7 +417,7 @@ OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/154637991-c202802c-3fa3-4028-b687-3cc6bb68fbbe.png)
  
  ************************************************************************************************************************************
- 10.Write a c# program to print fibonacci series without using recurd=sion and using recursion. <br>
+ 10. Write a c# program to print fibonacci series without using recursion and using recursion. <br>
 **************************************************************************************************************************************
  using System; <br>
 
@@ -445,7 +445,7 @@ namespace Fibonacci <br>
 ![image](https://user-images.githubusercontent.com/97940333/155659227-f6884f19-6863-412e-b590-4b80b230f5a0.png)
 
  ************************************************************************************************************************************************
- 11.Write a c# program to check prime number. <br>
+ 11. Write a c# program to check prime number. <br>
 **************************************************************************************************************************************************
  using System; <br>
 public class PrimeNumberExample <br>
@@ -500,7 +500,7 @@ public class PalindromeExample  <br>
  ![image](https://user-images.githubusercontent.com/97940333/155662868-b019525d-586b-4cab-81f5-0dc1ebcf3335.png)!![image](https://user-images.githubusercontent.com/97940333/155662954-ce9e552f-75ee-47ee-8c6b-81eacb2af3c7.png)
 
  ********************************************************************************************************************************************************
- 13.Write a c# program to print factorial of a number. <br>
+ 13. Write a c# program to print factorial of a number. <br>
 *********************************************************************************************************************************************************
  using System; <br>
 public class FactorialExample <br>
@@ -548,7 +548,7 @@ public class ArmstrongExample  <br>
  ![image](https://user-images.githubusercontent.com/97940333/155665951-0cbbb8f6-1274-4c39-812b-1533e265a2f5.png)!![image](https://user-images.githubusercontent.com/97940333/155666062-c9801d2c-261d-4ebc-ab60-edd6c8fba90f.png)
 
  ****************************************************************************************************************************************************
- 16.Write a c# program to print sum of digits. <br>
+ 16. Write a c# program to print sum of digits. <br>
  *****************************************************************************************************************************************************
  using System; <br>
 public class SumExample <br>
@@ -571,7 +571,7 @@ public class SumExample <br>
  ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)![image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
 
  ********************************************************************************************************************************************************
-17.Write a c# program to reverse given number. <br>
+17. Write a c# program to reverse given number. <br>
  *********************************************************************************************************************************************************
  using System; <br>
 public class ReverseExample  <br>
@@ -594,7 +594,7 @@ public class ReverseExample  <br>
  ![image](https://user-images.githubusercontent.com/97940333/155668608-05594aa4-f09d-4934-a046-1b3905335a00.png)
 
  ************************************************************************************************************************************************************
- 18.Write a c# program to swap two numbers without third variable. <br>
+ 18. Write a c# program to swap two numbers without third variable. <br>
  ************************************************************************************************************************************************************
  using System; <br>
 public class SwapExample   <br>
@@ -611,4 +611,57 @@ public class SwapExample   <br>
 } <br>
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/155669712-2af6101f-2a36-4c5e-95e2-f8fc9b8a701c.png)
+
+********************************************************************************************************************************************
+ 19. Write a c# program to find the sum of the values on diagonal of the matrix . <br>
+ ********************************************************************************************************************************************
+ using System; <br>
+
+namespace Sum_Of_Diagonals <br>
+{ <br>
+    class Sum_Of_Diagonals <br>
+    { <br>
+        static void Main(string[] args) <br>
+        { <br>
+            int MaxRow, MaxCol, Sum = 0; <br>
+            int[,] Matrix; <br>
+            Console.WriteLine("\n______________SUM OF DIAGONAL OF A MATRIX____________\n"); <br>
+            Console.Write("\n Enter the number of rows:"); <br>
+            MaxRow = Convert.ToInt32(Console.ReadLine()); <br>
+            Console.Write("\n Enter the number of columns:"); <br>
+            MaxCol = Convert.ToInt32(Console.ReadLine()); <br>
+            if(MaxRow!=MaxCol) <br>
+            { <br>
+                Console.WriteLine("\n The Dimensions entered are not of Square Matrix,"); <br>
+                Console.WriteLine("\n Exiting the Program.."); <br>
+                return; <br>
+            } <br>
+            Matrix = new int[MaxRow, MaxCol]; <br>
+            for(int i=0;i<MaxRow;i++) <br>
+            { <br>
+                for(int j=0;j<MaxCol;j++) <br>
+                { <br>
+                    Console.Write("\n Enter the ({0},{1}) the element of the matrix:", (i + 1), (j + 1)); <br>
+                    Matrix[i, j] = Convert.ToInt32(Console.ReadLine()); <br>
+                } <br>
+            } <br>
+            Console.WriteLine("\n The entered Matrix is:"); <br>
+            for(int i=0;i<MaxRow;i++) <br>
+            { <br>
+                for(int j=0;j<MaxCol;j++) <br>
+                { <br>
+                    Console.Write(" " + Matrix[i, j]); <br>
+                    if(i==j) <br>
+                    { <br>
+                        Sum += Matrix[i, j]; <br>
+                    } <br>
+                } <br>
+                Console.WriteLine(); <br>
+            } <br>
+            Console.WriteLine("\n The Sum of Diagonal is" + Sum); <br>
+        } <br>
+    } <br>
+} <br>
+ OUTPUT: <br>
+ ![image](https://user-images.githubusercontent.com/97940333/155672233-f9964754-3e13-4010-85ad-60e8f0358ccd.png)
 

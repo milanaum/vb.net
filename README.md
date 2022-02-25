@@ -565,3 +565,21 @@ public class ReverseExample  <br>
 }  <br>
  OUTPUT:  <br>
  ![image](https://user-images.githubusercontent.com/97940333/155668608-05594aa4-f09d-4934-a046-1b3905335a00.png)
+
+ 18.Write a c# program to swap two numbers without third variable. <br>
+ ********************************************************************************
+ using System; <br>
+public class SwapExample   <br>
+{  <br>
+    public static void Main(string[] args)  <br>
+    {  <br>
+        int a = 5, b = 10;  <br>
+        Console.WriteLine("Before swap a= " + a + " b= " + b);  <br>
+        a = a * b; //a=50 (5*10)   <br>
+        b = a / b; //b=5 (50/10)   <br>    
+        a = a / b; //a=10 (50/5)   <br>  
+        Console.Write("After swap a= " + a + " b= " + b); <br>
+    } <br>
+} <br>
+ OUTPUT: <br>
+ 

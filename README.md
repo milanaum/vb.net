@@ -1,5 +1,6 @@
 # vb.net
 # vb.net
+1.Write C# program to print a binary triangle <br>
 using System; <br>
 namespace Exercises <br>
 { <br>
@@ -28,7 +29,7 @@ namespace Exercises <br>
 } <br>
 output:
 
-![image](https://user-images.githubusercontent.com/97940277/154424310-683c4e72-1d56-42de-8157-6305eb621de2.png)<br>
+![image](https://user-images.githubusercontent.com/97940277/154424310-683c4e72-1d56-42de-8157-6305eb621de2.png)<br> <
 
 <br>
 2. C# Program to Check Whether the Entered Number is an Amicable Number  or Not. 

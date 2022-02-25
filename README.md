@@ -449,6 +449,7 @@ public class PrimeNumberExample <br>
     } <br>
 } <br>
  OUTPUT: <br>
-![image](https://user-images.githubusercontent.com/97940333/155661030-4cb66e8b-ef8d-4470-abd1-063f7a441711.png)
+![image](https://user-images.githubusercontent.com/97940333/155661030-4cb66e8b-ef8d-4470-abd1-063f7a441711.png) ![image](https://user-images.githubusercontent.com/97940333/155661299-e95ab4e9-9a1b-427a-a95e-8c0144b1829d.png)
+
 
 

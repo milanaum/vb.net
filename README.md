@@ -541,4 +541,6 @@ public class SumExample <br>
     } <br>
 } <br>
  OUTPUT: <br>
- 
+ ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)
+![image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
+

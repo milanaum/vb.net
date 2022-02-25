@@ -398,6 +398,30 @@ namespace Frequency <br>
 } <br>
 OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/154637991-c202802c-3fa3-4028-b687-3cc6bb68fbbe.png)
+ 
+ 10.Write a c# program to print fibonacci series without using recurd=sion and using recursion. <br>
+using System; <br>
+
+namespace Fibonacci <br>
+{ <br>
+ public   class Fibonacci <br>
+    { <br>
+       public static void Main(string[] args) <br>
+        { <br>
+            int n1 = 0, n2 = 1, n3, i, number; <br>
+            Console.Write("Enter the number of elements:"); <br>
+            number = int.Parse(Console.ReadLine()); <br>
+            Console.Write(n1 + "" + n2 + ""); <br>
+            for(i=2;i<number;++i) <br>
+            { <br>
+                n3 = n1 + n2; <br>
+                Console.Write(n3 + " "); <br>
+                n1 = n2; <br>
+                n2 = n3; <br>
+            } <br>
+        } <br>
+    } <br>
+} <br>
 
  
 

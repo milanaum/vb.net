@@ -451,5 +451,27 @@ public class PrimeNumberExample <br>
  OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/155661030-4cb66e8b-ef8d-4470-abd1-063f7a441711.png) ![image](https://user-images.githubusercontent.com/97940333/155661299-e95ab4e9-9a1b-427a-a95e-8c0144b1829d.png)
 
-
+ 12. Write a c# Program to check palindrome number. <br>
+using System; <br>
+public class PalindromeExample  <br>
+{ <br>
+    public static void Main(string[] args) <br>
+    { <br>
+        int n, r, sum = 0, temp; <br>
+        Console.Write("Enter the Number: "); <br>
+        n = int.Parse(Console.ReadLine()); <br>
+        temp = n; <br>
+        while (n > 0) <br>
+        { <br>
+            r = n % 10; <br>
+            sum = (sum * 10) + r; <br>
+            n = n / 10; <br>
+        } <br>
+        if (temp == sum) <br>
+            Console.Write("Number is Palindrome."); <br>
+        else <br>
+            Console.Write("Number is not Palindrome"); <br>
+    } <br>
+} <br>
+ OUTPUT: <br>
 

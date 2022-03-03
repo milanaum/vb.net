@@ -520,35 +520,9 @@ public class FactorialExample <br>
 OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/155664316-1998f10a-b116-40bf-b0e9-2fbc1724ee52.png)
 
- ****************************************************************************************************************************************************
-14. Write a c# program to check armstrong number. <br>
- *****************************************************************************************************************************************************
- using System; <br>
-public class ArmstrongExample  <br>
-{ <br>
-    public static void Main(string[] args) <br>
-    { <br>
-        int n, r, sum = 0, temp; <br>
-        Console.Write("Enter the Number= "); <br>
-        n = int.Parse(Console.ReadLine()); <br>
-        temp = n; <br>
-        while (n > 0) <br>
-        { <br>
-            r = n % 10; <br>
-            sum = sum + (r * r * r); <br>
-            n = n / 10; <br>
-        } <br>
-        if (temp == sum) <br>
-            Console.Write("Armstrong Number."); <br>
-        else <br>
-            Console.Write("Not Armstrong Number."); <br>
-    } <br>
-} <br>
- OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/155665951-0cbbb8f6-1274-4c39-812b-1533e265a2f5.png)!![image](https://user-images.githubusercontent.com/97940333/155666062-c9801d2c-261d-4ebc-ab60-edd6c8fba90f.png)
 
  ****************************************************************************************************************************************************
- 16. Write a c# program to print sum of digits. <br>
+ 14. Write a c# program to print sum of digits. <br>
  *****************************************************************************************************************************************************
  using System; <br>
 public class SumExample <br>
@@ -571,7 +545,7 @@ public class SumExample <br>
  ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)![image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
 
  ********************************************************************************************************************************************************
-17. Write a c# program to reverse given number. <br>
+15. Write a c# program to reverse given number. <br>
  *********************************************************************************************************************************************************
  using System; <br>
 public class ReverseExample  <br>
@@ -594,7 +568,7 @@ public class ReverseExample  <br>
  ![image](https://user-images.githubusercontent.com/97940333/155668608-05594aa4-f09d-4934-a046-1b3905335a00.png)
 
  ************************************************************************************************************************************************************
- 18. Write a c# program to swap two numbers without third variable. <br>
+ 16. Write a c# program to swap two numbers without third variable. <br>
  ************************************************************************************************************************************************************
  using System; <br>
 public class SwapExample   <br>
@@ -613,7 +587,7 @@ public class SwapExample   <br>
  ![image](https://user-images.githubusercontent.com/97940333/155669712-2af6101f-2a36-4c5e-95e2-f8fc9b8a701c.png)
 
 ********************************************************************************************************************************************
- 19. Write a c# program to find the sum of the values on diagonal of the matrix . <br>
+ 17. Write a c# program to find the sum of the values on diagonal of the matrix . <br>
  ********************************************************************************************************************************************
  using System; <br>
 
@@ -666,7 +640,7 @@ namespace Sum_Of_Diagonals <br>
  ![image](https://user-images.githubusercontent.com/97940333/155672233-f9964754-3e13-4010-85ad-60e8f0358ccd.png)
 
  ****************************************************************************************************************************************************************
- 20. Write a C# program to create a File  check the Existence of a File and Read the contents of the File. <br>
+ 18. Write a C# program to create a File  check the Existence of a File and Read the contents of the File. <br>
  ****************************************************************************************************************************************************************
  using System; <br>
 using System.IO; <br>
@@ -750,11 +724,105 @@ namespace File_Read <br>
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/156500850-29c88af5-2776-4461-bbda-f2281fa16ed1.png)<br> ![image](https://user-images.githubusercontent.com/97940333/156500952-2e7bf2d7-af3a-4c90-a239-81d383fdb1a6.png)
 
+************************************************************************************************************************************************
+ 19. Write a c# program to Perform File Comparison. <br>
+ ************************************************************************************************************************************************
+ using System; <br>
+using System.IO; <br>
+namespace FileRead <br>
+{ <br>
+    class FileRead <br>
+    { <br>
+       public static void Main() <br>
+        { <br>
+            string file1; <br>
+            string file2; <br>
+            Console.Write("Enter the first file path:"); <br>
+            file1 = Console.ReadLine(); <br>
+            Console.Write("Enter the second file path:"); <br>
+            file2 = Console.ReadLine(); <br>
+            if(!File.Exists(file1)) <br>
+            { <br>
+                Console.WriteLine("First file does not exist!"); <br>
+            } <br>
+            else if(! File.Exists(file2)) <br>
+            { <br>
+                Console.WriteLine("Second file does not exist!"); <br>
+            } <br>
+            else if(File.ReadAllText(file1)==File.ReadAllText(file2)) <br>
+            { <br>
+                Console.WriteLine("Both files contain the same cuurent"); <br>
+            } <br>
+            else <br>
+            { <br>
+                Console.WriteLine("Contents of files are not same"); <br>
+            } <br>
+        } <br>
+    } <br>
+} <br>
+ OUTPUT: <br>
+ 
+ 
+ ************************************************************************************************************************
+ 20. Write a c# program to Implement IComparable Interface. <br>
+ *************************************************************************************************************************
+ using System; <br>
+namespace Exercises <br>
+{ <br>
+    class Fraction :IComparable <br>
+    { <br>
+        int z, n; <br>
+        public Fraction(int z, int n) <br>
+        { <br>
+            this.z = z; <br>
+            this.n = n; <br>
+        } <br>
+        public static Fraction operator +(Fraction a, Fraction b) <br>
+        { <br>
+            return new Fraction(a.z * b.n + a.n * b.z, a.n * b.n); <br>
+        } <br>
+        public static Fraction operator *(Fraction a, Fraction b) <br>
+        { <br>
+            return new Fraction(a.z * b.z, a.n * b.n); <br>
+        } <br>
+        public int CompareTo(object obj) <br>
+        { <br>
+            Fraction f = (Fraction)obj; <br>
+            if ((float)z / n < (float)f.z / f.n) <br>
+                return -1; <br>
+            else if ((float)z / n > (float)f.z / f.n) <br>
+                return 1; <br>
+            else <br>
+                return 0; <br>
+        } <br>
+        public override string ToString() <br>
+        { <br>
+            return z + "/" + n; <br>
+        } <br>
+    } <br>
+    class ICompInterface <br>
+    { <br>
+        public static void Main() <br>
+        { <br>
+        Fraction[] a = { <br>
+ new Fraction(5,2), <br>
+ new Fraction(29,6), <br>
+ new Fraction(4,5), <br>
+ new Fraction(10,8), <br>
+ new Fraction(34,7) <br>
+ }; <br>
+            Array.Sort(a); <br>
+            Console.WriteLine("Implementing the IComparable Interface in " + "Displaying  Fractions : "); <br>
+            foreach (Fraction f in a) <br>
+            { <br>
+                Console.WriteLine(f + " "); <br>
+            } <br>
+            Console.WriteLine(); <br>
+            Console.ReadLine(); <br>
+        } <br>
+    } <br>
+} <br>
+ OUTPUT: <br>
+![image](https://user-images.githubusercontent.com/97940333/156504541-4742834d-6c69-41b4-9558-7144b585e235.png)
 
-
- 
- 
- 
- 
- 
  

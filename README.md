@@ -761,6 +761,14 @@ namespace FileRead <br>
     } <br>
 } <br>
  OUTPUT: <br>
+ ![image](https://user-images.githubusercontent.com/97940333/156504786-26e0f3ee-957c-41b7-a4e8-9963df5a6ef9.png)
+<br>![image](https://user-images.githubusercontent.com/97940333/156506239-7375834d-2a54-4562-aeb0-a2bb53084be2.png)
+<br>![image](https://user-images.githubusercontent.com/97940333/156506318-d818f678-05e4-4312-b9d5-da21c4014286.png)
+<br>![image](https://user-images.githubusercontent.com/97940333/156506424-e40f99ff-fe87-48da-9902-545f6508af15.png)
+<br>![image](https://user-images.githubusercontent.com/97940333/156506594-a89f7a08-1289-4825-8374-0a2df14a66fe.png)
+
+
+
  
  
  ************************************************************************************************************************

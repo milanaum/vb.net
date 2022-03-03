@@ -766,10 +766,6 @@ namespace FileRead <br>
 <br>![image](https://user-images.githubusercontent.com/97940333/156506318-d818f678-05e4-4312-b9d5-da21c4014286.png)
 <br>![image](https://user-images.githubusercontent.com/97940333/156506424-e40f99ff-fe87-48da-9902-545f6508af15.png)
 <br>![image](https://user-images.githubusercontent.com/97940333/156506594-a89f7a08-1289-4825-8374-0a2df14a66fe.png)
-
-
-
- 
  
  ************************************************************************************************************************
  20. Write a c# program to Implement IComparable Interface. <br>
@@ -832,5 +828,44 @@ namespace Exercises <br>
 } <br>
  OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/156504541-4742834d-6c69-41b4-9558-7144b585e235.png)
+
+ ************************************************************************************************************************
+ 21.Write a c# program to create ThreadPool. <br>
+ *************************************************************************************************************************
+using System; <br>
+using System.Threading;  <br>
+namespace Exercises  <br>
+{  <br>
+    class ThreadPoolProg  <br>
+    {  <br>
+        public void ThreadFun1(object obj)  <br>
+        {  <br>
+            int loop = 0;  <br>
+            for (loop = 0; loop <= 4; loop++)  <br>
+            {  <br>
+                Console.WriteLine("Thread1 is executing");  <br>
+            }  <br>
+        }  <br>
+        public void ThreadFun2(object obj)  <br>
+        {  <br>
+            int loop = 0;  <br>
+            for (loop = 0; loop <= 4; loop++)  <br>
+            {  <br>
+                Console.WriteLine("Thread2 is executing");  <br>
+            }  <br>
+        }  <br>
+        public static void Main()  <br>
+        {  <br>
+            ThreadPoolProg TP = new ThreadPoolProg();  <br>
+            for (int i = 0; i < 2; i++)  <br>
+            {  <br>
+                ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun1)); ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun2));  <br>
+            }  <br>
+            Console.ReadKey();  <br>
+        }  <br>
+    }  <br>
+}  <br>
+ OUTPUT:  <br>
+ ![image](https://user-images.githubusercontent.com/97940333/156508199-ac5f65a3-6ddb-402a-addd-a261a375c406.png)
 
  

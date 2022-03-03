@@ -324,7 +324,7 @@ namespace Register_number <br>
     } <br>
 } <br>
 OUTPUT: <br>
-![image](https://user-images.githubusercontent.com/97940333/154635181-0f940813-32eb-4881-879c-99d15b2591c8.png)![image](https://user-images.githubusercontent.com/97940333/154635531-cfbb395d-b6c3-4aa0-b400-68bb18972dd2.png)
+![image](https://user-images.githubusercontent.com/97940333/154635181-0f940813-32eb-4881-879c-99d15b2591c8.png)<br>[image](https://user-images.githubusercontent.com/97940333/154635531-cfbb395d-b6c3-4aa0-b400-68bb18972dd2.png)
 
  ************************************************************************************************************************************************
  8. Write aC# program to find the frequency of the word "is" in a given sentence. <br>
@@ -462,7 +462,7 @@ public class PrimeNumberExample <br>
     } <br>
 } <br>
  OUTPUT: <br>
-![image](https://user-images.githubusercontent.com/97940333/155661030-4cb66e8b-ef8d-4470-abd1-063f7a441711.png) ![image](https://user-images.githubusercontent.com/97940333/155661299-e95ab4e9-9a1b-427a-a95e-8c0144b1829d.png)
+![image](https://user-images.githubusercontent.com/97940333/155661030-4cb66e8b-ef8d-4470-abd1-063f7a441711.png) <br>[image](https://user-images.githubusercontent.com/97940333/155661299-e95ab4e9-9a1b-427a-a95e-8c0144b1829d.png)
 
  ************************************************************************************************************************************************
  12. Write a c# Program to check palindrome number. <br>
@@ -489,7 +489,7 @@ public class PalindromeExample  <br>
     } <br>
 } <br>
  OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/155662868-b019525d-586b-4cab-81f5-0dc1ebcf3335.png)!![image](https://user-images.githubusercontent.com/97940333/155662954-ce9e552f-75ee-47ee-8c6b-81eacb2af3c7.png)
+ ![image](https://user-images.githubusercontent.com/97940333/155662868-b019525d-586b-4cab-81f5-0dc1ebcf3335.png)<br>![image](https://user-images.githubusercontent.com/97940333/155662954-ce9e552f-75ee-47ee-8c6b-81eacb2af3c7.png)
 
  ********************************************************************************************************************************************************
  13. Write a c# program to print factorial of a number. <br>
@@ -534,7 +534,7 @@ public class SumExample <br>
     } <br>
 } <br>
  OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)![image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
+ ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)<br>[image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
 
  ********************************************************************************************************************************************************
 15. Write a c# program to reverse given number. <br>

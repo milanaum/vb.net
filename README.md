@@ -1,7 +1,7 @@
 # vb.net
 # vb.net
 ********************************************************************************************
-1. Write C# program to print a binary triangle <br>
+1. Write a C# program to print a binary triangle <br>
 ********************************************************************************************
 using System; <br>
 namespace Exercises <br>
@@ -34,7 +34,7 @@ output:
 ![image](https://user-images.githubusercontent.com/97940277/154424310-683c4e72-1d56-42de-8157-6305eb621de2.png)<br> 
 
 ************************************************************************************************************************
-2. C# Program to Check Whether the Entered Number is an Amicable Number  or Not. <br>  
+2.Write a C# Program to Check Whether the Entered Number is an Amicable Number  or Not. <br>  
 *************************************************************************************************************************
 using System; <br>
 namespace Exercises <br>
@@ -76,7 +76,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/97940277/154425770-736ffae1-e0b1-47bb-9302-dc3bb7b0f174.png)
 
 ****************************************************************************************************************
-3. C# Program to Illustrate Multilevel Inheritance with Virtual Methods  (displaying student details). <br>
+3.Write a C# Program to Illustrate Multilevel Inheritance with Virtual Methods  (displaying student details). <br>
 ************************************************************************************************************
 using System; <br>
 namespace Exercises<br> 
@@ -115,7 +115,6 @@ namespace Exercises<br>
  { <br>
  base.Display(); <br>
  Console.WriteLine("\n-------- COURSE DETAILS --------\n");<br>
-
  Console.WriteLine("Register Number : " + regNo); <br>
  Console.WriteLine("Course : " + course); <br>
  Console.WriteLine("Semester : " + semester); <br>
@@ -153,9 +152,7 @@ namespace Exercises<br>
  grade = "First Class"; <br>
  else if(average>=50) <br>
  grade = "Second Class"; <br>
- 
-
-else <br>
+ else <br>
  grade = "Pass Class";<br> 
  } <br>
  public override void Display() <br>
@@ -167,7 +164,6 @@ else <br>
  Console.Write(marks[i] + " <br>
  Console.Write<br>
  Console.WriteLine("Total : " + total); <br>
- 
  Console.WriteLine("Average : " + average); <br>
  Console.WriteLine("Grade : " + grade); <br>
  } <br>
@@ -181,18 +177,17 @@ else <br>
  } <br>
  } <br>
 }<br>
-output:
+OUTPUT: <br>
 ![Screenshot (2)](https://user-images.githubusercontent.com/97940277/154626095-6285ac41-c5d1-43f9-b32f-4633d2e02030.png)<br>
 
 ****************************************************************************************************************
-4. C# Program to Create a Gray Code.<br>
+4. Write a C# Program to Create a Gray Code.<br>
 ****************************************************************************************************************
 using System; <br>
 namespace Exercises <br>
 { <br>
  class GrayCode <br>
  { <br>
-  
  static int getGray(int n) <br>
  { <br>
  return n^(n>>1); <br>
@@ -213,7 +208,7 @@ Output:<br>
 ![Screenshot (4)](https://user-images.githubusercontent.com/97940277/154628717-e1674fe3-eb2f-4265-80ca-84070f18b137.png)<br>
 
 ************************************************************************************************************************************************
-5. C# program to calculate volume of 2 boxes and find the resultant volume  after addition of 2 boxes by implementing operator overloading.<br> 
+5.Write a C# program to calculate volume of 2 boxes and find the resultant volume  after addition of 2 boxes by implementing operator overloading.<br> 
 ************************************************************************************************************************************************
 using System;<br>
 namespace Exercises<br>
@@ -259,7 +254,7 @@ Output:<br>
 ![Screenshot (6)](https://user-images.githubusercontent.com/97940277/154629462-8db67286-8206-4499-a9f4-332a2a467ab8.png)<br>
 
 ********************************************************************************************************************************************
-6. C# Program to Implement Principles of Delegates (converting input string to  uppercase first, last and entire string). <br>
+6. Write a C# Program to Implement Principles of Delegates (converting input string to  uppercase first, last and entire string). <br>
 ********************************************************************************************************************************************
 using System; <br>
 namespace Exercises <br>
@@ -301,10 +296,9 @@ Output:<BR>
  ![Screenshot (8)](https://user-images.githubusercontent.com/97940277/154631240-41ca6a79-7405-492b-92fa-a0480c9c1587.png)
 
  ****************************************************************************************************************************
- 7. C# program to Generate Register Number automatically for 100 Students using Static Constructor. <br>
+ 7. Write a C# program to Generate Register Number automatically for 100 Students using Static Constructor. <br>
  ****************************************************************************************************************************
  using System; <br>
-
 namespace Register_number <br>
 { <br>
     class Register_number <br>
@@ -333,10 +327,9 @@ OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/154635181-0f940813-32eb-4881-879c-99d15b2591c8.png)![image](https://user-images.githubusercontent.com/97940333/154635531-cfbb395d-b6c3-4aa0-b400-68bb18972dd2.png)
 
  ************************************************************************************************************************************************
- 8. C# program to find the frequency of the word "is" in a given sentence. <br>
+ 8. Write aC# program to find the frequency of the word "is" in a given sentence. <br>
 ************************************************************************************************************************************************
 using System;
-
 namespace Frequency <br>
 { <br>
     class Frequency <br>
@@ -365,7 +358,7 @@ namespace Frequency <br>
  ![image](https://user-images.githubusercontent.com/97940333/154636503-6710c374-c37a-425f-819e-f2e7cea50b0a.png)
 
  ********************************************************************************************************************************
-9. C# program that benchmarks 2D,jagged array allocation. <br>
+9. Write a C# program that benchmarks 2D,jagged array allocation. <br>
 **********************************************************************************************************************************
  using System; <br>
  using Benchmark_Allocation <br>
@@ -420,7 +413,6 @@ OUTPUT: <br>
  10. Write a c# program to print fibonacci series without using recursion and using recursion. <br>
 **************************************************************************************************************************************
  using System; <br>
-
 namespace Fibonacci <br>
 { <br>
  public   class Fibonacci <br>
@@ -590,7 +582,6 @@ public class SwapExample   <br>
  17. Write a c# program to find the sum of the values on diagonal of the matrix . <br>
  ********************************************************************************************************************************************
  using System; <br>
-
 namespace Sum_Of_Diagonals <br>
 { <br>
     class Sum_Of_Diagonals <br>

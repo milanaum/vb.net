@@ -663,57 +663,59 @@ namespace File_Read <br>
                         fileStr.WriteLine(r); <br>
                     } <br>
                     Console.WriteLine("File is Created.."); <br>
-                    break; <br>
+                    break;  <br>
 
-                    case 2: <br>
-                    Console.Write("\n Enter the file name:"); <br>
-                    fileName = Console.ReadLine(); <br>
-                    if (File.Exists(fileName)) <br>
-                    { <br>
-                        Console.WriteLine("File exists.."); <br>
-                    } <br>
-                    else <br>
-                    { <br>
-                        Console.WriteLine("File does not exist in the current directory!"); <br>
-                    } <br>
-                    break; <br>
+                    case 2:  <br>
+                    Console.Write("\n Enter the file name:");  <br>
+                    fileName = Console.ReadLine();  <br>
+                    if (File.Exists(fileName))  <br>
+                    {  <br>
+                        Console.WriteLine("File exists..");  <br>
+                    }  <br>
+                    else  <br>
+                    {  <br>
+                        Console.WriteLine("File does not exist in the current directory!");  <br>
+                    }  <br>
+                    break;  <br>
 
-                case 3: <br>
-                    Console.Write("Enter the file name to read the contents\n"); <br>
-                    fileName = Console.ReadLine(); <br>
-                        if (File.Exists(fileName)) <br>
-                        { <br>
-                            using (StreamReader sr = File.OpenText(fileName)) <br>
-                            { <br>
-                                string s = " "; <br>
-                                Console.WriteLine("Here is the content of the file:"); <br>
-                                while ((s = sr.ReadLine()) != null) <br>
-                                { <br>
-                                    Console.WriteLine(s); <br>
-                                } <br>
-                                Console.WriteLine(" "); <br>
-                            } <br>
-                        } <br>
-                        else <br>
-                        { <br>
-                            Console.WriteLine("File does not exists"); <br>
-                        } <br>
-            break; <br>
+                case 3:  <br>
+                    Console.Write("Enter the file name to read the contents\n");  <br>
+                    fileName = Console.ReadLine();  <br>
+                        if (File.Exists(fileName))  <br>
+                        {  <br>
+                            using (StreamReader sr = File.OpenText(fileName))  <br>
+                            {  <br>
+                                string s = " ";  <br>
+                                Console.WriteLine("Here is the content of the file:");  <br>
+                                while ((s = sr.ReadLine()) != null)  <br>
+                                {  <br>
+                                    Console.WriteLine(s);  <br>
+                                }  <br>
+                                Console.WriteLine(" ");  <br>
+                            }  <br>
+                        }  <br>
+                        else  <br>
+                        {  <br>
+                            Console.WriteLine("File does not exists");  <br>
+                        }  <br>
+            break;  <br>
 
-          case 4: <br>
-                Console.WriteLine("\n Exiting...."); <br>
-            return; <br>
+          case 4:  <br>
+                Console.WriteLine("\n Exiting....");  <br>
+            return;  <br>
 
-            default: <br>
-                Console.WriteLine("\n Invalid choice"); <br>
-            break; <br>
-            } <br>
-        } <br>
-    } <br>
-    } <br>
-} <br>
- OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/156500850-29c88af5-2776-4461-bbda-f2281fa16ed1.png)<br> ![image](https://user-images.githubusercontent.com/97940333/156500952-2e7bf2d7-af3a-4c90-a239-81d383fdb1a6.png)
+            default:  <br>
+                Console.WriteLine("\n Invalid choice");  <br>
+            break;  <br>
+            }  <br>
+        }  <br>
+    }  <br>
+    }  <br>
+}  <br>
+ 
+ OUTPUT:  <br>
+ ![image](https://user-images.githubusercontent.com/97940333/157633093-48707e89-6bfc-49af-93da-f8c9a71e1da6.png)
+
 
 ************************************************************************************************************************************************
  19. Write a c# program to Perform File Comparison. <br>

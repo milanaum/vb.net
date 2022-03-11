@@ -966,5 +966,8 @@ namespace String_Operations <br>
 } <br>
  
  OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/157820233-5b2b8396-7417-4502-9392-45bca80e09bf.png)
+ 
+![image](https://user-images.githubusercontent.com/97940333/157820572-a67eb8c9-7feb-4e3d-a5f9-9495e9c51650.png) <br>![image](https://user-images.githubusercontent.com/97940333/157820670-6267d2d0-06ba-4b6d-9684-b646760b7f49.png) <br>![image](https://user-images.githubusercontent.com/97940333/157820830-7b1b6711-d78b-41ea-bb2a-2f8e772cb753.png)
+
+
 

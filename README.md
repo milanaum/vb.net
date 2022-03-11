@@ -910,4 +910,61 @@ public class Age  <br>
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/156510179-9793d13e-30bf-4e6f-8f63-d157f07103c5.png)
 
+ ************************************************************************************************************************************************
+23. C# program to Perform Reversal, Padding and Trimming Operations on string. <br>
+************************************************************************************************************************************************
+ using System; <br>
+using System.Collections.Generic; <br>
+using System.ComponentModel; <br>
+using System.Data; <br>
+using System.Drawing; <br>
+using System.Linq; <br>
+using System.Text; <br>
+using System.Threading.Tasks; <br>
+using System.Windows.Forms; <br>
+
+namespace String_Operations <br>
+{ <br>
+    public partial class Form1 : Form <br>
+    { <br>
+        public Form1() <br> 
+        { <br>
+            InitializeComponent(); <br>
+        } <br>
+
+        private void btnrev_Click(object sender, EventArgs e) <br>
+        { <br>
+            string inputString, revstr = ""; <br>
+            int Length; <br>
+            inputString = txtInput.Text; <br>
+            Length = inputString.Length - 1; <br>
+            while (Length >= 0) <br>
+            { <br>
+                revstr = revstr + inputString[Length]; <br>
+                Length--; <br>
+            } <br>
+            MessageBox.Show("Reverse String Is : " + revstr, "Result"); <br>
+        } <br>
+
+        private void btntrim_Click(object sender, EventArgs e) <br>
+        { <br>
+            string inputString; <br>
+            inputString = txtInput.Text; <br>
+            MessageBox.Show("The String After Trimming : " + inputString.Trim(), "Result"); <br>
+        } <br>
+
+        private void btnpad_Click(object sender, EventArgs e) <br>
+        { <br>
+            string inputString; <br>
+            inputString = txtInput.Text; <br>
+            inputString = inputString.PadLeft(10, '*'); <br>
+            inputString = inputString.PadRight(15, '*'); <br>
+            MessageBox.Show("String After Padding : " + inputString, "Result"); <br>
+        } <br>
+
+    } <br>
+} <br>
  
+ OUTPUT: <br>
+ ![image](https://user-images.githubusercontent.com/97940333/157820233-5b2b8396-7417-4502-9392-45bca80e09bf.png)
+

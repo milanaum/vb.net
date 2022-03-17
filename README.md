@@ -1052,3 +1052,46 @@ namespace Digits <br>
 OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/158741672-b6ffb632-fa7d-45b8-b40e-8c2f1c982545.png) <br> ![image](https://user-images.githubusercontent.com/97940333/158741923-f4418976-ea16-41ca-b945-a52dba501dfd.png)
 
+****************************************************************************************************************************************
+ 25. C# Program to create a Progress Bar Control
+ ****************************************************************************************************************************************
+ using System; <br>
+using System.ComponentModel;<br>
+using System.Threading; <br>
+using System.Windows.Forms; <br>
+
+namespace Progress_Bar <br>
+{ <br>
+    public partial class Form1 : Form <br>
+    { <br>
+        public Form1() <br>
+        { <br>
+            InitializeComponent(); <br>
+        } <br>
+
+        private void Form1_Load(object sender, EventArgs e) <br>
+        { <br>
+                backgroundWorker1.WorkerReportsProgress = true; <br>
+                backgroundWorker1.RunWorkerAsync(); <br>
+            } <br>
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e) <br>
+        { <br>
+            for (int i = 1; i <= 100; i++) <br>
+            { <br>
+                Thread.Sleep(50); <br>
+                backgroundWorker1.ReportProgress(i); <br>
+            } <br>
+        } <br>
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e) <br>
+        { <br>
+            progressBar1.Value = e.ProgressPercentage; <br>
+            this.Text = "Progress: " + e.ProgressPercentage.ToString() + "%"; <br>
+        } <br>
+    } <br>
+}  <br>
+
+ OUTPUT: <br>
+ ![image](https://user-images.githubusercontent.com/97940333/158745251-e7a6d71f-dc9d-4058-8483-621cb96cd82c.png) <br>
+ ![image](https://user-images.githubusercontent.com/97940333/158745536-4e5cf95b-c063-44a3-b79d-96ea2daeb51c.png)
+

@@ -637,80 +637,79 @@ namespace Sum_Of_Diagonals <br>
 using System.IO; <br>
 namespace File_Read <br>
 { <br>
-    class File_Read <br>
-    { <br>
-        public static void Main() <br>
-        { <br>
-        string fileName; <br>
-        while (true) <br>
-            { <br>
-            Console.WriteLine("\n_______________MENU____________________\n"); <br>
-            Console.WriteLine("\n 1.Create a File"); <br>
-            Console.WriteLine("\n 2.Existence of the File"); <br>
-            Console.WriteLine("\n 3.Read the contents of the File"); <br>
-            Console.WriteLine("\n 4.Exit"); <br>
-            Console.WriteLine("\n Enter your choice:"); <br>
-            int ch = int.Parse(Console.ReadLine()); <br>
-            switch (ch) <br>
-            { <br>
-                case 1: <br>
-                    Console.Write("\n Enter the file name to create:"); <br>
-                    fileName = Console.ReadLine(); <br>
-                    Console.WriteLine("\n Write the contents to the File:\n"); <br>
-                    string r = Console.ReadLine(); <br>
-                    using (StreamWriter fileStr = File.CreateText(fileName)) <br>
-                    { <br>
-                        fileStr.WriteLine(r); <br>
-                    } <br>
-                    Console.WriteLine("File is Created.."); <br>
-                    break;  <br>
+class File_Read <br>
+{ <br>
+ public static void Main() <br>
+ { <br>
+ string fileName; <br>
+ while (true) <br>
+ { <br>
+ Console.WriteLine("\n_______________MENU____________________\n"); <br>
+ Console.WriteLine("\n 1.Create a File"); <br>
+ Console.WriteLine("\n 2.Existence of the File"); <br>
+ Console.WriteLine("\n 3.Read the contents of the File"); <br>
+ Console.WriteLine("\n 4.Exit"); <br>
+ Console.WriteLine("\n Enter your choice:"); <br>
+ int ch = int.Parse(Console.ReadLine()); <br>
+  switch (ch) <br>
+ { <br>
+ case 1: <br>
+ Console.Write("\n Enter the file name to create:"); <br>
+ fileName = Console.ReadLine(); <br>
+ Console.WriteLine("\n Write the contents to the File:\n"); <br>
+ string r = Console.ReadLine(); <br>
+ using (StreamWriter fileStr = File.CreateText(fileName)) <br>
+ { <br>
+ fileStr.WriteLine(r); <br>
+ } <br>
+ Console.WriteLine("File is Created.."); <br>
+ break;  <br>
 
-                    case 2:  
-                    Console.Write("\n Enter the file name:");  
-                    fileName = Console.ReadLine();  
-                    if (File.Exists(fileName))  
-                    {  
-                        Console.WriteLine("File exists..");  
-                    }  
-                    else  
-                    {  
-                        Console.WriteLine("File does not exist in the current directory!");  
-                    }  <br>
-                    break;  
+ case 2:  
+ Console.Write("\n Enter the file name:");  
+ fileName = Console.ReadLine();  
+ if (File.Exists(fileName))  
+ {  
+ Console.WriteLine("File exists..");  
+ }  
+ else  
+{  
+Console.WriteLine("File does not exist in the current directory!");  
+}  <br>
+break;  
+ case 3:  
+ Console.Write("Enter the file name to read the contents\n");  
+ fileName = Console.ReadLine();  
+ if (File.Exists(fileName))  
+ {  
+ using (StreamReader sr = File.OpenText(fileName))  
+ {  
+ string s = " ";  
+ Console.WriteLine("Here is the content of the file:");  
+ while ((s = sr.ReadLine()) != null)  
+ {  
+ Console.WriteLine(s);  
+ }  
+ Console.WriteLine(" ");  
+ }  
+  }  
+ else  
+ {  
+ Console.WriteLine("File does not exists");  
+ } 
+ break;  
 
-                case 3:  
-                    Console.Write("Enter the file name to read the contents\n");  
-                    fileName = Console.ReadLine();  
-                        if (File.Exists(fileName))  
-                        {  
-                            using (StreamReader sr = File.OpenText(fileName))  
-                            {  
-                                string s = " ";  
-                                Console.WriteLine("Here is the content of the file:");  
-                                while ((s = sr.ReadLine()) != null)  
-                                {  
-                                    Console.WriteLine(s);  
-                                }  
-                                Console.WriteLine(" ");  
-                            }  
-                        }  
-                        else  
-                        {  
-                            Console.WriteLine("File does not exists");  
-                        }  
-            break;  
+ case 4:  
+ Console.WriteLine("\n Exiting....");  
+ return;  
 
-          case 4:  
-                Console.WriteLine("\n Exiting....");  
-            return;  
-
-            default:  
-                Console.WriteLine("\n Invalid choice");  
-            break;  
-            }  
-        }  
-    }  
-    }  
+ default:  
+ Console.WriteLine("\n Invalid choice");  
+ break;  
+ }  
+ }  
+ }  
+ }  
 }  
  
  OUTPUT:  <br>
@@ -989,7 +988,7 @@ namespace Digits <br>
    InitializeComponent(); <br>
     } <br>
 
-    private void button1_Click(object sender, EventArgs e) <br>
+ private void button1_Click(object sender, EventArgs e) <br>
    { <br>
      lbl_words.Text = NumtoWord(long.Parse(txt_num.Text)); <br>
      } <br>

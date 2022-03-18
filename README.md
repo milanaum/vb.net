@@ -925,44 +925,41 @@ using System.Windows.Forms; <br>
 
 namespace String_Operations <br>
 { <br>
-    public partial class Form1 : Form <br>
-    { <br>
-        public Form1() <br> 
-        { <br>
-            InitializeComponent(); <br>
-        } <br>
+ public partial class Form1 : Form <br>
+  { <br>
+  public Form1() <br> 
+  { <br>
+  InitializeComponent(); <br>
+ } <br>
+private void btnrev_Click(object sender, EventArgs e) <br>
+  { <br>
+ string inputString, revstr = ""; <br>
+ nt Length; <br>
+ inputString = txtInput.Text; <br>
+  Length = inputString.Length - 1; <br>
+   while (Length >= 0) <br>
+   { <br>
+   Length--; <br>
+   } <br>
+   MessageBox.Show("Reverse String Is : " + revstr, "Result"); <br>
+   } <br>
 
-        private void btnrev_Click(object sender, EventArgs e) <br>
-        { <br>
-            string inputString, revstr = ""; <br>
-            int Length; <br>
-            inputString = txtInput.Text; <br>
-            Length = inputString.Length - 1; <br>
-            while (Length >= 0) <br>
-            { <br>
-                revstr = revstr + inputString[Length]; <br>
-                Length--; <br>
-            } <br>
-            MessageBox.Show("Reverse String Is : " + revstr, "Result"); <br>
-        } <br>
+   private void btntrim_Click(object sender, EventArgs e) <br>
+   { <br>
+   string inputString; <br>
+   inputString = txtInput.Text; <br>
+   MessageBox.Show("The String After Trimming : " + inputString.Trim(), "Result"); <br>
+   } <br>
 
-        private void btntrim_Click(object sender, EventArgs e) <br>
-        { <br>
-            string inputString; <br>
-            inputString = txtInput.Text; <br>
-            MessageBox.Show("The String After Trimming : " + inputString.Trim(), "Result"); <br>
-        } <br>
-
-        private void btnpad_Click(object sender, EventArgs e) <br>
-        { <br>
-            string inputString; <br>
-            inputString = txtInput.Text; <br>
-            inputString = inputString.PadLeft(10, '*'); <br>
-            inputString = inputString.PadRight(15, '*'); <br>
-            MessageBox.Show("String After Padding : " + inputString, "Result"); <br>
-        } <br>
-
-    } <br>
+   private void btnpad_Click(object sender, EventArgs e) <br>
+  { <br>
+ string inputString; <br>
+ inputString = txtInput.Text; <br>
+ inputString = inputString.PadLeft(10, '*'); <br>
+ inputString = inputString.PadRight(15, '*'); <br>
+ MessageBox.Show("String After Padding : " + inputString, "Result"); <br>
+  } <br>
+ } <br>
 } <br>
  
  OUTPUT: <br>
@@ -985,68 +982,68 @@ using System.Windows.Forms; <br>
 
 namespace Digits <br>
 { <br>
-    public partial class Form1 : Form <br>
-    { <br>
-        public Form1() <br>
-        { <br>
-            InitializeComponent(); <br>
-        } <br>
-
-        private void button1_Click(object sender, EventArgs e) <br>
-        { <br>
-            lbl_words.Text = NumtoWord(long.Parse(txt_num.Text)); <br>
-        } <br>
-        public string NumtoWord(long number) <br>
-        { <br>
-            string word = ""; <br>
-            if (number == 0) <br>
-            { <br>
-                return "Zero"; <br>
-            } <br>
-            if (number < 0) <br>
-            { <br>
-                return "Minus" + Math.Abs(number); <br>
-            } <br>
-            if (number / 10000000 > 0) <br>
-            { <br>
-                word += NumtoWord(number / 10000000) + "Corer"; number %= 10000000; <br>
-            } <br>
-
-        if (number / 100000 > 0) <br>
-            { <br>
-                word += NumtoWord(number / 100000) + "Lacs"; <br>
-                number %= 100000; <br>
-            } <br>
-            if (number / 1000 > 0) <br>
-            { <br>
-                word += NumtoWord(number / 1000) + "Thousand"; <br>
-                number %= 1000; <br>
-            } <br>
-            if (number / 100 > 0) <br>
-            { <br>
-                word += NumtoWord(number / 100) + "Hundred"; <br>
-                number %= 100; <br>
-            } <br>
-            if (number > 0) <br>
-            { <br>
-                string[] units = new string[] { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen" }; <br>
-                string[] Tens = new string[] { "Zero", "Ten", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" }; <br>
-                if (number < 20) <br>
-                { <br>
-                    word += units[number]; <br>
-                } <br>
-                else <br>
-                { <br>
-                    word += Tens[number / 10]; <br>
-                    if (number % 10 > 0) <br>
-                    { <br>
-                        word += units[number % 10]; <br>
-                    } <br>
-                } <br>
-            } <br>
-            return word; <br>
-        } <br>
+ public partial class Form1 : Form <br>
+ { <br>
+  public Form1() <br>
+  { <br>
+   InitializeComponent(); <br>
     } <br>
+
+    private void button1_Click(object sender, EventArgs e) <br>
+   { <br>
+     lbl_words.Text = NumtoWord(long.Parse(txt_num.Text)); <br>
+     } <br>
+    public string NumtoWord(long number) <br>
+    { <br>
+    string word = ""; <br>
+   if (number == 0) <br>
+   { <br>
+    return "Zero"; <br>
+   } <br>
+   if (number < 0) <br>
+   { <br>
+   return "Minus" + Math.Abs(number); <br>
+  } <br>
+  if (number / 10000000 > 0) <br>
+  { <br>
+    word += NumtoWord(number / 10000000) + "Corer"; number %= 10000000; <br>
+   } <br>
+
+   if (number / 100000 > 0) <br>
+  { <br>
+   word += NumtoWord(number / 100000) + "Lacs"; <br>
+  number %= 100000; <br>
+  } <br>
+  if (number / 1000 > 0) <br>
+  { <br>
+  word += NumtoWord(number / 1000) + "Thousand"; <br>
+  number %= 1000; <br>
+  } <br>
+  if (number / 100 > 0) <br>
+  { <br>
+  word += NumtoWord(number / 100) + "Hundred"; <br>
+  number %= 100; <br>
+ } <br>
+ if (number > 0) <br>
+ { <br>
+ string[] units = new string[] { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen" }; <br>
+ string[] Tens = new string[] { "Zero", "Ten", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" }; <br>
+  if (number < 20) <br>
+  { <br>
+  word += units[number]; <br>
+  } <br>
+  else <br>
+  { <br>
+   word += Tens[number / 10]; <br>
+  if (number % 10 > 0) <br>
+  { <br>
+  word += units[number % 10]; <br>
+ } <br>
+ } <br>
+ } <br>
+ return word; <br>
+ } <br>
+ } <br>
 } <br>
 
 OUTPUT: <br>
@@ -1062,33 +1059,33 @@ using System.Windows.Forms; <br>
 
 namespace Progress_Bar <br>
 { <br>
-    public partial class Form1 : Form <br>
-    { <br>
-        public Form1() <br>
-        { <br>
-            InitializeComponent(); <br>
-        } <br>
+ public partial class Form1 : Form <br>
+ { <br>
+ public Form1() <br>
+ { <br>
+  InitializeComponent(); <br>
+ } <br>
 
-        private void Form1_Load(object sender, EventArgs e) <br>
-        { <br>
-                backgroundWorker1.WorkerReportsProgress = true; <br>
-                backgroundWorker1.RunWorkerAsync(); <br>
-            } <br>
+  private void Form1_Load(object sender, EventArgs e) <br>
+   { <br>
+  backgroundWorker1.WorkerReportsProgress = true; <br>
+  backgroundWorker1.RunWorkerAsync(); <br>
+  } <br>
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e) <br>
-        { <br>
-            for (int i = 1; i <= 100; i++) <br>
-            { <br>
-                Thread.Sleep(50); <br>
-                backgroundWorker1.ReportProgress(i); <br>
-            } <br>
-        } <br>
-     private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e) <br>
-      { <br>
-      progressBar1.Value = e.ProgressPercentage; <br>
-     this.Text = "Progress: " + e.ProgressPercentage.ToString() + "%"; <br>
-        } <br>
-    } <br>
+  private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e) <br>
+ { <br>
+  for (int i = 1; i <= 100; i++) <br>
+ { <br>
+ Thread.Sleep(50); <br>
+ backgroundWorker1.ReportProgress(i); <br>
+ } <br>
+ } <br>
+  private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e) <br>
+  { <br>
+  progressBar1.Value = e.ProgressPercentage; <br>
+  this.Text = "Progress: " + e.ProgressPercentage.ToString() + "%"; <br>
+  } <br>
+ } <br>
 }  <br>
 
  OUTPUT: <br>
@@ -1109,13 +1106,13 @@ using System.Threading.Tasks; <br>
 using System.Windows.Forms; <br>
 namespace Winform <br>
 { <br>
-    public partial class Form1 : Form <br>
-    { <br>
-        public Form1() <br>
-        { <br>
-            InitializeComponent(); <br>
-            timer1.Start(); <br>
-        } <br>
+ public partial class Form1 : Form <br>
+ { <br>
+  public Form1() <br>
+  { <br>
+  InitializeComponent(); <br>
+  timer1.Start(); <br>
+  } <br>
 
  private void Form1_Load(object sender, EventArgs e) <br>
  { <br>

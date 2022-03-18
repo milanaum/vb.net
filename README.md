@@ -1117,13 +1117,13 @@ namespace Winform <br>
             timer1.Start(); <br>
         } <br>
 
-        private void Form1_Load(object sender, EventArgs e) <br>
-        { <br>
-            System.Timers.Timer timer = new System.Timers.Timer(); <br>
-            timer.Interval = 1000;//1s  <br>
-            timer.Elapsed += Timer_Elapsed; <br>
-            timer.Start(); <br>
-        } <br>
+ private void Form1_Load(object sender, EventArgs e) <br>
+ { <br>
+ System.Timers.Timer timer = new System.Timers.Timer(); <br>
+ timer.Interval = 1000;//1s  <br>
+  timer.Elapsed += Timer_Elapsed; <br>
+ timer.Start(); <br>
+  } <br>
  private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e) <br>
  { <br>
 cularProgressBar1.Invoke((MethodInvoker)delegate <br>

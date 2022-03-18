@@ -1083,10 +1083,10 @@ namespace Progress_Bar <br>
                 backgroundWorker1.ReportProgress(i); <br>
             } <br>
         } <br>
-        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e) <br>
-        { <br>
-            progressBar1.Value = e.ProgressPercentage; <br>
-            this.Text = "Progress: " + e.ProgressPercentage.ToString() + "%"; <br>
+     private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e) <br>
+      { <br>
+      progressBar1.Value = e.ProgressPercentage; <br>
+     this.Text = "Progress: " + e.ProgressPercentage.ToString() + "%"; <br>
         } <br>
     } <br>
 }  <br>

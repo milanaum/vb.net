@@ -1153,31 +1153,29 @@ namespace game<br>
   int win = 10;<br>
   int guess = 1;<br>
   Button button1;<br>
-        TextBox textBox1;<br>
-        RichTextBox richTextBox1;<br>
-        RichTextBox richTextBox2;<br>
-        Label label4;<br>
+  TextBox textBox1;<br>
+  RichTextBox richTextBox1;<br>
+  RichTextBox richTextBox2;<br>
+  Label label4;<br>
+ public Form1()<br>
+ {<br>
+ InitializeComponent();<br>
+  {<br>
+  value = r.Next(10);<br>
+  this.Controls.Clear();<br>
+  this.BackColor = Color.SkyBlue;<br>
+  this.AutoSize = true;<br>
+  this.Padding = new Padding(16);<br>
+   Label label = new Label();<br>
+  label.Text = "Pick a number between 1 and 100"; label.Bounds = new Rectangle(10, 20, 340, 40); label.Font = new Font("Arial", 16);<br>
+ textBox1 = new TextBox();<br>
+  textBox1.Bounds = new Rectangle(20, 50, 120, 80); textBox1.Font = new Font("Arial", 24);<br>
 
-        public Form1()<br>
-        {<br>
-            InitializeComponent();<br>
-            {<br>
-                value = r.Next(10);<br>
-                this.Controls.Clear();<br>
-                this.BackColor = Color.SkyBlue;<br>
-                this.AutoSize = true;<br>
-                this.Padding = new Padding(16);<br>
-                Label label = new Label();<br>
-                label.Text = "Pick a number between 1 and 100"; label.Bounds = new Rectangle(10, 20, 340, 40); label.Font = new Font("Arial", 16);<br>
-
-                textBox1 = new TextBox();<br>
-                textBox1.Bounds = new Rectangle(20, 50, 120, 80); textBox1.Font = new Font("Arial", 24);<br>
-
-                button1 = new Button();<br>
-                button1.Text = " Check Your Guess ";<br>
-                button1.Bounds = new Rectangle(160, 50, 120, 40);<br>
+  button1 = new Button();<br>
+ button1.Text = " Check Your Guess ";<br>
+ button1.Bounds = new Rectangle(160, 50, 120, 40);<br>
  button1.BackColor = Color.LightGray;<br>
-                button1.Click += new EventHandler(button1_Click);<br>
+ button1.Click += new EventHandler(button1_Click);<br>
                 Label label2 = new Label();<br>
                 label2.Text = "Low Guess";<br>
                 label2.Bounds = new Rectangle(20, 150, 160, 40); label2.Font = new Font("Arial", 18);<br>

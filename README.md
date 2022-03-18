@@ -1124,14 +1124,14 @@ namespace Winform <br>
             timer.Elapsed += Timer_Elapsed; <br>
             timer.Start(); <br>
         } <br>
-        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e) <br>
-        { <br>
-            circularProgressBar1.Invoke((MethodInvoker)delegate <br>
-            { <br>
-                circularProgressBar1.Text = DateTime.Now.ToString("hh:mm:ss"); circularProgressBar1.SubscriptText = DateTime.Now.ToString("tt");//AM or PM  });  <br>
-         }); <br>
-        } <br>
-    } <br>
+ private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e) <br>
+ { <br>
+cularProgressBar1.Invoke((MethodInvoker)delegate <br>
+ { <br>
+ circularProgressBar1.Text = DateTime.Now.ToString("hh:mm:ss"); circularProgressBar1.SubscriptText = DateTime.Now.ToString("tt");//AM or PM  });  <br>
+ }); <br>
+ } <br>
+ } <br>
 
 } <br>
 

@@ -1176,69 +1176,64 @@ namespace game<br>
  button1.Bounds = new Rectangle(160, 50, 120, 40);<br>
  button1.BackColor = Color.LightGray;<br>
  button1.Click += new EventHandler(button1_Click);<br>
-                Label label2 = new Label();<br>
-                label2.Text = "Low Guess";<br>
-                label2.Bounds = new Rectangle(20, 150, 160, 40); label2.Font = new Font("Arial", 18);<br>
-                richTextBox1 = new RichTextBox();<br>
-                richTextBox1.Bounds = new Rectangle(20, 190, 160, 300); richTextBox1.Font = new Font("Arial", 16);<br>
-                Label label3 = new Label();<br>
-                label3.Text = "High Guess";<br>
-                label3.Bounds = new Rectangle(180, 150, 160, 40); label3.Font = new Font("Arial", 18);<br>
-                richTextBox2 = new RichTextBox();<br>
-                richTextBox2.Bounds = new Rectangle(180, 190, 160, 300); richTextBox2.Font = new Font("Arial", 16);<br>
-                label4 = new Label();<br>
-                label4.Bounds = new Rectangle(20, 100, 340, 40); label4.Font = new Font("Arial", 16);<br>
-                this.Controls.Add(label);<br>
-                this.Controls.Add(textBox1);<br>
-                this.Controls.Add(button1);<br>
-                this.Controls.Add(label4);<br>
-                this.Controls.Add(label2);<br>
-                this.Controls.Add(label3);<br>
-                this.Controls.Add(richTextBox1);<br>
-                this.Controls.Add(richTextBox2);<br>
-            }<br>
-
-
-        }<br>
-        private void button1_Click(object sender, EventArgs e)<br>
-        {<br>
-            // Coding of game  <br>
-            if (textBox1.Text == "")<br>
-            {<br>
-                return;<br>
-            }<br>
-            guessnum = Convert.ToInt32(textBox1.Text); textBox1.Text = String.Empty;<br>
-            if (win >= 0)<br>
-            { <br>
-
-            if (guessnum == value)<br>
-                {<br>
-                    MessageBox.Show("You have guessed the number! \n The number was " + value); InitializeComponent();<br>
-                }<br>
-                else if (guessnum < value)<br>
-                {<br>
-                    richTextBox1.Text += guessnum + "\n";<br>
-                    label4.Text = "wrong Guess and number of guesses left are " + (10 - guess);<br>
-                }<br>
-                else if (guessnum > value)<br>
-                {<br>
-                    richTextBox2.Text += guessnum + "\n";<br>
-                    label4.Text = "wrong Guess and number of guesses left are " + (10 - guess);<br>
-                }<br>
-                guess++;<br>
-                win--;<br>
-            }<br>
-            if (guess == 11)<br>
-            {<br>
-                label4.Text = "You loose,Correct Guess is " + value;<br>
-            }<br>
-        }<br>
-
-        private void Form1_Load(object sender, EventArgs e)<br>
-        {<br>
-
-        }<br>
-    }<br>
+ Label label2 = new Label();<br>
+ label2.Text = "Low Guess";<br>
+ label2.Bounds = new Rectangle(20, 150, 160, 40); label2.Font = new Font("Arial", 18);<br>
+  richTextBox1 = new RichTextBox();<br>
+ richTextBox1.Bounds = new Rectangle(20, 190, 160, 300); richTextBox1.Font = new Font("Arial", 16);<br>
+ Label label3 = new Label();<br>
+ label3.Text = "High Guess";<br>
+ label3.Bounds = new Rectangle(180, 150, 160, 40); label3.Font = new Font("Arial", 18);<br>
+ richTextBox2 = new RichTextBox();<br>
+ richTextBox2.Bounds = new Rectangle(180, 190, 160, 300); richTextBox2.Font = new Font("Arial", 16);<br>
+ label4 = new Label();<br>
+ label4.Bounds = new Rectangle(20, 100, 340, 40); label4.Font = new Font("Arial", 16);<br>
+ this.Controls.Add(label);<br>
+ this.Controls.Add(textBox1);<br>
+ this.Controls.Add(button1);<br>
+ this.Controls.Add(label4);<br>
+ this.Controls.Add(label2);<br>
+ this.Controls.Add(label3);<br>
+ this.Controls.Add(richTextBox1);<br>
+this.Controls.Add(richTextBox2);<br>
+ }<br>
+ }<br>
+ private void button1_Click(object sender, EventArgs e)<br>
+ {<br>
+ // Coding of game  <br>
+ if (textBox1.Text == "")<br>
+ {<br>
+ return;<br>
+ }<br>
+ guessnum = Convert.ToInt32(textBox1.Text); textBox1.Text = String.Empty;<br>
+ if (win >= 0)<br>
+ { <br>
+ if (guessnum == value)<br>
+  {<br>
+  MessageBox.Show("You have guessed the number! \n The number was " + value); InitializeComponent();<br>
+  }<br>
+  else if (guessnum < value)<br>
+  {<br>
+  richTextBox1.Text += guessnum + "\n";<br>
+  label4.Text = "wrong Guess and number of guesses left are " + (10 - guess);<br>
+  }<br>
+  else if (guessnum > value)<br>
+  {<br>
+  richTextBox2.Text += guessnum + "\n";<br>
+  label4.Text = "wrong Guess and number of guesses left are " + (10 - guess);<br>
+  }<br>
+ guess++;<br>
+ win--;<br>
+ }<br>
+ if (guess == 11)<br>
+ {<br>
+ label4.Text = "You loose,Correct Guess is " + value;<br>
+}<br>
+}<br>
+private void Form1_Load(object sender, EventArgs e)<br>
+{<br>
+}<br>
+}<br>
 }<br>
 
 ************************************************************************************************************************************

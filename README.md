@@ -1331,24 +1331,291 @@ case 1: <br>
  } <br>
  } <br>
  else <br>
-                { <br>
-                    txtContent.SaveFile(fileName, RichTextBoxStreamType.RichText); <br>
-                } <br>
-            } <br>
-            private void NotepadClosing(Object sender, FormClosingEventArgs e) <br>
-            { <br>
-                saveFile(); <br>
-            } <br>
-            /*static void Main(String[] args) <br>
-            { <br>
+ { <br>
+ txtContent.SaveFile(fileName, RichTextBoxStreamType.RichText); <br>
+ } <br>
+ } <br>
+ private void NotepadClosing(Object sender, FormClosingEventArgs e) <br>
+ { <br>
+ saveFile(); <br>
+ } <br>
+ /*static void Main(String[] args) <br>
+ { <br>
 
-            Application.Run(new NotepadForm()); <br>
-            }*/<br>
-        } <br>
-    } <br>
+ Application.Run(new NotepadForm()); <br>
+ }*/<br>
+ } <br>
+ } <br>
  
 OUTPUT:  <br>![image](https://user-images.githubusercontent.com/97940333/160990386-a546180f-8f39-406f-89ee-f470f095b313.png)
 
+ ********************************************************************************************************************************************************
+29. C# Program to Perform Reversal, Padding and Trimming Operations on  string. <br>
+************************************************************************************************************************************************************
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+using System.Drawing.Drawing2D;<br>
+
+namespace BinaryTree<br>
+{<br>
+ public partial class Form1 : Form<br>
+{<br>
+private Node root;<br>
+public Form1()<br>
+{<br>
+InitializeComponent();<br>
+this.root = null;<br>
+test();<br>
+}<br>
+void test()<br>
+{<br>
+textBox1.Text = "5";<br>
+btnAdd_Click(btnAdd, null);<br>
+textBox1.Text = "3";<br>
+btnAdd_Click(btnAdd, null);<br>
+textBox1.Text = "2";<br>
+btnAdd_Click(btnAdd, null);<br>
+textBox1.Text = "1";<br>
+btnAdd_Click(btnAdd, null);<br>
+textBox1.Text = "4";<br>
+btnAdd_Click(btnAdd, null);<br>
+textBox1.Text = "7";<br>
+btnAdd_Click(btnAdd, null);<br>
+textBox1.Text = "6";<br>
+btnAdd_Click(btnAdd, null);<br>
+textBox1.Text = "8";<br>
+btnAdd_Click(btnAdd, null);<br>
+}<br>
+private void btnCreate_Click(object sender, EventArgs e)<br>
+{<br>
+root = null;<br>
+pictureBox1.Image = null;<br>
+}<br>
+private void btnAdd_Click(object sender, EventArgs e)<br>
+{<br>
+int value = int.Parse(textBox1.Text); if (root == null)<br>
+root = new Node(value);<br>
+else<br>
+{<br>
+if (root.Add(value) == false)<br>
+MessageBox.Show("The value already exists!");<br>
+}<br>
+drawTree();<br>
+}<br>
+private void btnRemove_Click(object sender, EventArgs e)<br>
+{<br>
+int value = int.Parse(textBox1.Text); if (root != null)<br>
+{<br>
+bool status = root.Remove(value, root, ref root); if (status == false)<br>
+{<br>
+MessageBox.Show("the value does not exists");<br>
+}<br>
+}<br>
+drawTree();<br>
+}<br>
+ private void btnSearcch_Click(object sender, EventArgs e)<br>
+{<br>
+string msg;<br>
+int value = int.Parse(textBox1.Text); if (root == null)<br>
+{<br>
+msg = "Tree is empty";<br>
+}<br>
+ else<br>
+ {<br>
+if (root.Exists(value))<br>
+{<br>
+msg = "Value found";<br>
+}<br>
+else<br>
+{<br>
+msg = "Value not found";<br>
+}<br>
+}<br>
+MessageBox.Show(msg);<br>
+}<br>
+void drawTree()<br>
+{<br>
+if (root != null)<br>
+pictureBox1.Image = root.Draw();<br>
+else<br>
+pictureBox1.Image = null;<br>
+this.Update();<br>
+ }<br>
+ }<br>
+ class Node<br>
+ {<br>
+ internal Node left { get; set; }<br>
+ internal Node right { get; set; }<br>
+ internal int value;<br>
+ internal int center = 12;<br>
+ private static Bitmap nodeBg = new Bitmap(30, 25); private static Font font = new Font("Arial", 14);<br>
+ internal Node(int value)<br>
+ {<br>
+ this.value = value;<br>
+ }<br>
+ internal bool Add(int value)<br>
+{<br>
+Node node = new Node(value);<br>
+if (value < this.value)<br>
+{<br>
+ if (this.left == null)<br>
+{<br>
+this.left = node;<br>
+return true;<br>
+}<br>
+else<br>
+return this.left.Add(value);<br>
+}<br>
+else if (value > this.value)<br>
+{<br>
+if(this.right == null)<br>
+{<br>
+this.right = node;<br>
+ return true;<br>
+ }<br>
+ else<br>
+ return this.right.Add(value);<br>
+ }<br>
+ return false;<br>
+ }<br>
+ internal bool Remove(int value, Node parent, ref Node root)<br>
+ {<br>
+ if (value < this.value)<br>
+ {<br>
+ if (left != null)<br>
+ {<br>
+ return left.Remove(value, this, ref root);<br>
+ }<br>
+ }<br>
+ else if (value > this.value)<br>
+  {<br>
+ if (right != null)<br>
+  {<br>
+  return right.Remove(value, this, ref root);<br>
+  }<br>
+  }<br>
+  else if (value == this.value)<br>
+ {<br>
+ bool isLeft = (this == parent.left);<br>
+ if (left == null && right == null)<br>
+ {<br>
+ if (root == this)<br>
+ root = null;<br>
+ else<br>
+ if (isLeft) parent.left = null; else parent.right = null;<br>
+ }<br>
+ else if (right == null)<br>
+{<br>
+ if (isLeft) parent.left = left; else parent.right = left; if (root == this)<br>
+ root = left;<br>
+ }<br>
+ else<br>
+ {<br>
+ if (right.left == null)<br>
+ {<br>
+ right.left = left;<br>
+ if (isLeft) parent.left = right;<br>
+ else<br>
+ parent.right = right;<br>
+ if (root == this)<br>
+ root = right;<br>
+ }<br>
+ else<br>
+ {<br>
+ Node node = right;<br>
+ while (node.left.left != null)<br>
+ node = node.left;<br>
+ Console.WriteLine("Node: " + node.value);<br>
+ this.value = node.left.value;<br>
+ Console.WriteLine("here");<br>
+ node.left = null;<br>
+ }<br>
+ }<br>
+   return true;<br>
+   }<br>
+   return false;<br>
+   }<br>
+   public Image Draw()<br>
+   {<br>
+   Size lSize = new Size(nodeBg.Width / 2, 0);<br>
+   Size rSize = new Size(nodeBg.Width / 2, 0);<br>
+   Image lNodeImg = null;<br>
+  Image rNodeImg = null;<br>
+  int lCenter = 0, rCenter = 0;<br>
+
+  if (this.left != null)<br>
+  {<br>
+  lNodeImg = left.Draw();<br>
+  lSize = lNodeImg.Size;<br>
+  this.center = lSize.Width;<br>
+  lCenter = left.center;<br>
+  }<br>
+  if (this.right != null)<br>
+  {<br>
+  rNodeImg = right.Draw();<br>
+  rSize = rNodeImg.Size;<br>
+  rCenter = right.center;<br>
+  }<br>
+  int maxHeight = (lSize.Height < rSize.Height) ? rSize.Height : lSize.Height; if (maxHeight > 0) maxHeight += 35;<br>
+
+  Size resultSize = new Size(lSize.Width + rSize.Width, nodeBg.Size.Height + maxHeight);<br>
+  Bitmap result = new Bitmap(resultSize.Width, resultSize.Height);<br>
+  Graphics g = Graphics.FromImage(result);<br>
+  g.SmoothingMode = SmoothingMode.HighQuality;<br>
+  g.FillRectangle(Brushes.White, new Rectangle(new Point(0, 0), resultSize)); g.DrawImage(nodeBg, lSize.Width - nodeBg.Width / 2, 0);<br>
+  string str = "" + value;<br>
+  g.DrawString(str, font, Brushes.Black, lSize.Width - nodeBg.Width / 2 + 7, nodeBg.Height / 2f - 12);<br>
+  Pen pen = new Pen(Brushes.Black, 1.2f);<br>
+  float x1 = center;<br>
+  float y1 = nodeBg.Height;<br>
+  float y2 = nodeBg.Height + 35;<br>
+  float x2 = lCenter;<br>
+  var h = Math.Abs(y2 - y1);<br>
+  var w = Math.Abs(x2 - x1);<br>
+  if (lNodeImg != null)<br>
+  {<br>
+  g.DrawImage(lNodeImg, 0, nodeBg.Size.Height + 35); var points1 = new List<PointF><br>
+ {<br>
+ new PointF(x1, y1),<br>
+ new PointF(x1 - w/6, y1 + h/3.5f),<br>
+ new PointF(x2 + w/6, y2 - h/3.5f),<br>
+ new PointF(x2, y2),<br>
+ };<br>
+ g.DrawCurve(pen, points1.ToArray(), 0.5f);<br>
+  }<br>
+  if (rNodeImg != null)<br>
+ {<br>
+ g.DrawImage(rNodeImg, lSize.Width, nodeBg.Size.Height + 35); x2 = rCenter + lSize.Width;<br>
+ w = Math.Abs(x2 - x1);<br>
+ var points = new List<PointF><br>
+ {<br>
+ new PointF(x1, y1)<br>,
+ new PointF(x1 + w/6, y1 + h/3.5f),<br>
+ new PointF(x2 - w/6, y2 - h/3.5f),<br>
+ new PointF(x2, y2)<br>
+ };<br>
+g.DrawCurve(pen, points.ToArray(), 0.5f);<br>
+ }<br>
+ return result;<br>
+ }<br>
+ public bool Exists(int value)<br>
+ {<br>
+ bool res = value == this.value;<br>
+ if (!res && left != null)<br>
+ res = left.Exists(value);<br>
+ if (!res && right != null)<br>
+ res = right.Exists(value);<br>
+ return res;<br>
+}<br>
+}<br>
+} <br>
+
+
  
-
-

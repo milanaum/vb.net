@@ -1617,5 +1617,11 @@ g.DrawCurve(pen, points.ToArray(), 0.5f);<br>
 }<br>
 } <br>
 
+ OUTPUT: <br>
+![image](https://user-images.githubusercontent.com/97940333/161208591-3fb8f5d3-f9b9-4576-8f85-3b7c3748e62c.png) <br>
 
+ ![image](https://user-images.githubusercontent.com/97940333/161208474-dc0c78d6-0bd7-49a2-a6a4-58135f30fe9e.png) <br>
  
+ ![image](https://user-images.githubusercontent.com/97940333/161208735-7d30f937-37f4-4f86-bda9-2713c559ce6e.png) <br>
+
+

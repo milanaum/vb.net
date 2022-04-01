@@ -324,7 +324,9 @@ namespace Register_number <br>
     } <br>
 } <br>
 OUTPUT: <br>
-![image](https://user-images.githubusercontent.com/97940333/154635181-0f940813-32eb-4881-879c-99d15b2591c8.png)<br>[image](https://user-images.githubusercontent.com/97940333/154635531-cfbb395d-b6c3-4aa0-b400-68bb18972dd2.png)
+![image](https://user-images.githubusercontent.com/97940333/154635181-0f940813-32eb-4881-879c-99d15b2591c8.png)<br>
+ 
+ [image](https://user-images.githubusercontent.com/97940333/154635531-cfbb395d-b6c3-4aa0-b400-68bb18972dd2.png)
 
  ************************************************************************************************************************************************
  8. Write aC# program to find the frequency of the word "is" in a given sentence. <br>
@@ -462,7 +464,9 @@ public class PrimeNumberExample <br>
     } <br>
 } <br>
  OUTPUT: <br>
-![image](https://user-images.githubusercontent.com/97940333/155661030-4cb66e8b-ef8d-4470-abd1-063f7a441711.png) <br>[image](https://user-images.githubusercontent.com/97940333/155661299-e95ab4e9-9a1b-427a-a95e-8c0144b1829d.png)
+![image](https://user-images.githubusercontent.com/97940333/155661030-4cb66e8b-ef8d-4470-abd1-063f7a441711.png) <br>
+ 
+ [image](https://user-images.githubusercontent.com/97940333/155661299-e95ab4e9-9a1b-427a-a95e-8c0144b1829d.png)
 
  ************************************************************************************************************************************************
  12. Write a c# Program to check palindrome number. <br>
@@ -489,7 +493,9 @@ public class PalindromeExample  <br>
     } <br>
 } <br>
  OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/155662868-b019525d-586b-4cab-81f5-0dc1ebcf3335.png)<br>![image](https://user-images.githubusercontent.com/97940333/155662954-ce9e552f-75ee-47ee-8c6b-81eacb2af3c7.png)
+ ![image](https://user-images.githubusercontent.com/97940333/155662868-b019525d-586b-4cab-81f5-0dc1ebcf3335.png)<br>
+ 
+ ![image](https://user-images.githubusercontent.com/97940333/155662954-ce9e552f-75ee-47ee-8c6b-81eacb2af3c7.png)
 
  ********************************************************************************************************************************************************
  13. Write a c# program to print factorial of a number. <br>
@@ -534,7 +540,9 @@ public class SumExample <br>
     } <br>
 } <br>
  OUTPUT: <br>
- ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)<br>[image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
+ ![image](https://user-images.githubusercontent.com/97940333/155667426-1ec4975c-9713-4e4c-b906-6f1a935f52bd.png)<br>
+ 
+ [image](https://user-images.githubusercontent.com/97940333/155667517-b8601215-7e5e-48d4-b212-1f8ff0e8041d.png)
 
  ********************************************************************************************************************************************************
 15. Write a c# program to reverse given number. <br>
@@ -754,9 +762,13 @@ namespace FileRead <br>
 } <br>
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/156504786-26e0f3ee-957c-41b7-a4e8-9963df5a6ef9.png)
+ 
 <br>![image](https://user-images.githubusercontent.com/97940333/156506239-7375834d-2a54-4562-aeb0-a2bb53084be2.png)
+ 
 <br>![image](https://user-images.githubusercontent.com/97940333/156506318-d818f678-05e4-4312-b9d5-da21c4014286.png)
+ 
 <br>![image](https://user-images.githubusercontent.com/97940333/156506424-e40f99ff-fe87-48da-9902-545f6508af15.png)
+ 
 <br>![image](https://user-images.githubusercontent.com/97940333/156506594-a89f7a08-1289-4825-8374-0a2df14a66fe.png)
  
  ************************************************************************************************************************
@@ -964,7 +976,12 @@ private void btnrev_Click(object sender, EventArgs e) <br>
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/158742138-e52f6a0d-6c3f-465c-8375-6d692095df59.png)<br>
 
-![image](https://user-images.githubusercontent.com/97940333/157820572-a67eb8c9-7feb-4e3d-a5f9-9495e9c51650.png) <br>![image](https://user-images.githubusercontent.com/97940333/157820670-6267d2d0-06ba-4b6d-9684-b646760b7f49.png) <br>![image](https://user-images.githubusercontent.com/97940333/157820830-7b1b6711-d78b-41ea-bb2a-2f8e772cb753.png)
+![image](https://user-images.githubusercontent.com/97940333/157820572-a67eb8c9-7feb-4e3d-a5f9-9495e9c51650.png) <br>
+ 
+ ![image](https://user-images.githubusercontent.com/97940333/157820670-6267d2d0-06ba-4b6d-9684-b646760b7f49.png) <br>
+ 
+ 
+ ![image](https://user-images.githubusercontent.com/97940333/157820830-7b1b6711-d78b-41ea-bb2a-2f8e772cb753.png)
 
  ********************************************************************************************************************************
 24. C# Program to convert digits to words. <br>
@@ -1046,7 +1063,9 @@ namespace Digits <br>
 } <br>
 
 OUTPUT: <br>
-![image](https://user-images.githubusercontent.com/97940333/158741672-b6ffb632-fa7d-45b8-b40e-8c2f1c982545.png) <br> ![image](https://user-images.githubusercontent.com/97940333/158741923-f4418976-ea16-41ca-b945-a52dba501dfd.png)
+![image](https://user-images.githubusercontent.com/97940333/158741672-b6ffb632-fa7d-45b8-b40e-8c2f1c982545.png) <br>
+ 
+ ![image](https://user-images.githubusercontent.com/97940333/158741923-f4418976-ea16-41ca-b945-a52dba501dfd.png) <br>
 
 ****************************************************************************************************************************************
  25. C# Program to create a Progress Bar Control
@@ -1089,7 +1108,8 @@ namespace Progress_Bar <br>
 
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/158745251-e7a6d71f-dc9d-4058-8483-621cb96cd82c.png) <br>
- ![image](https://user-images.githubusercontent.com/97940333/158745536-4e5cf95b-c063-44a3-b79d-96ea2daeb51c.png)
+ 
+ ![image](https://user-images.githubusercontent.com/97940333/158745536-4e5cf95b-c063-44a3-b79d-96ea2daeb51c.png)<br>
 
  ****************************************************************************************************************************************
  26. Develop a winform application to create flat clock. <br>
@@ -1133,7 +1153,8 @@ cularProgressBar1.Invoke((MethodInvoker)delegate <br>
 
  OUTPUT: <br>
  ![image](https://user-images.githubusercontent.com/97940333/158944460-57a7afb8-1a58-404e-a5e5-1dc845b96dfe.png) <br>
- ![image](https://user-images.githubusercontent.com/97940333/158944634-defed55a-9b9d-443b-95ef-3444ea9fa37d.png)
+ 
+ ![image](https://user-images.githubusercontent.com/97940333/158944634-defed55a-9b9d-443b-95ef-3444ea9fa37d.png) <br>
 
 ****************************************************************************************************************************************************
  27.  C# program to perform a number guessing game. <br>
@@ -1235,6 +1256,13 @@ private void Form1_Load(object sender, EventArgs e)<br>
 }<br>
 }<br>
 }<br>
+ 
+ OUTPUT:<br>
+ ![image](https://user-images.githubusercontent.com/97940333/161211079-afee86af-1c86-443b-aa8d-5675639ede52.png) <br>
+ 
+ ![image](https://user-images.githubusercontent.com/97940333/161211264-645a6f35-fe4d-49cf-b0db-753daf49bac7.png) <br>
+ 
+ ![image](https://user-images.githubusercontent.com/97940333/161211473-15bd7640-c761-4e5a-8d27-a449999d4a35.png) <br>
 
 ************************************************************************************************************************************
  28.Develop an application to create a notepad. <br>

@@ -44,7 +44,8 @@ namespace Exercises <br>
  static void Main(string[] args) <br>
  { <br>
  int num1, num2, sum1=0, sum2=0; <br>
- Console.WriteLine("\n--------AMICABLE NUMBERS-----------\n");  Console.Write("\nEnter the first number: "); <br>
+ Console.WriteLine("\n--------AMICABLE NUMBERS-----------\n");
+ Console.Write("\nEnter the first number: "); <br>
  num1 = Convert.ToInt32(Console.ReadLine()); <br>
  Console.Write("\nEnter the second number: "); <br>
  num2 = Convert.ToInt32(Console.ReadLine()); <br>
@@ -161,8 +162,8 @@ namespace Exercises<br>
  Console.WriteLine("\n-------- MARKS DETAILS --------\n"); <br>
  Console.Write("Marks in 5 subjects: "); <br>
  for(int i=0; i<5; i++) <br>
- Console.Write(marks[i] + " <br>
- Console.Write<br>
+ Console.Write(marks[i] + " "); <br>
+ Console.Write();<br>
  Console.WriteLine("Total : " + total); <br>
  Console.WriteLine("Average : " + average); <br>
  Console.WriteLine("Grade : " + grade); <br>

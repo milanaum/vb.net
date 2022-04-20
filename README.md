@@ -172,7 +172,7 @@ namespace Exercises<br>
  { <br>
  public static void Main(string[] args) <br>
  { <br>
- MarksDetails Student1 = new MarksDetails("Abhijith", 22, "Male", 20190001, "MCA", 5,  new int[]{77,80,98,95,90}); <br>
+ MarksDetails Student1 = new MarksDetails("Rehal Thomas", 22, "Male", 20190001, "MCA", 5,  new int[]{77,80,98,95,90}); <br>
  Student1.Display(); <br>
  } <br>
  } <br>

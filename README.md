@@ -227,7 +227,7 @@ namespace Exercises<br>
         {<br>
             this.width = width;<br>
             this.height = height;<br>
-            this.length = height;<br>
+            this.length = length;<br>
         }<br>
         public static float operator +(Box box1, Box box2)<br>
         {<br>
@@ -240,15 +240,15 @@ namespace Exercises<br>
     }<br>
     class OperatorOverloading<br>
     {<br>
-        public static void Main()<br>
-        {
-            Box box1 = new Box(10, 20, 30);<br>
-            Box box2 = new Box(25, 32, 15);<br>
-            Console.WriteLine("Volume of {0} is: {1}", box1, box1.Volume); Console.WriteLine("Volume of {0} is: {1}", box2, box2.Volume);<br>
+     public static void Main()<br>
+     {
+     Box box1 = new Box(10, 20, 30);<br>
+     Box box2 = new Box(25, 32, 15);<br>
+     Console.WriteLine("Volume of {0} is: {1}", box1, box1.Volume); Console.WriteLine("Volume of {0} is: {1}", box2, box2.Volume);<br>
 
-        Console.WriteLine("Volume after adding boxes: {0}", box1 + box2);<br>
-        }<br>
-    }<br>
+  Console.WriteLine("Volume after adding boxes: {0}", box1 + box2);<br>
+  }<br>
+  }<br>
 }<br>
 
 Output:<br>

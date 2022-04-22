@@ -179,7 +179,8 @@ namespace Exercises<br>
  } <br>
 }<br>
 OUTPUT: <br>
-![Screenshot (2)](https://user-images.githubusercontent.com/97940277/154626095-6285ac41-c5d1-43f9-b32f-4633d2e02030.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/164607558-1432ed7c-d422-4c17-afa5-a64d37987dbd.png)
+
 
 ****************************************************************************************************************
 4. Write a C# Program to Create a Gray Code.<br>

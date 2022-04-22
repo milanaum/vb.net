@@ -44,7 +44,7 @@ namespace Exercises <br>
  static void Main(string[] args) <br>
  { <br>
  int num1, num2, sum1=0, sum2=0; <br>
- Console.WriteLine("\n--------AMICABLE NUMBERS-----------\n");
+ Console.WriteLine("\n--------AMICABLE NUMBERS-----------\n");<br>
  Console.Write("\nEnter the first number: "); <br>
  num1 = Convert.ToInt32(Console.ReadLine()); <br>
  Console.Write("\nEnter the second number: "); <br>
